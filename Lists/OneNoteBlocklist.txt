@@ -1,0 +1,20 @@
+! Title: OneNote Blocklist by L33Tech
+! Might need Decentraleyes to work
+onenote.officeapps.live.com/o/RemoteTelemetry.ashx
+skype.com
+swx.cdn.skype.com
+spoprod-a.akamaihd.net
+spoprod-a.akamaihd.net
+poprod-a.akamaihd.net
+r1.res.office365.com
+r2.res.office365.com
+r3.res.office365.com
+r4.res.office365.com
+b-ring.msedge.net
+atm-fp-direct.office.com
+ajax.aspnetcdn.com
+aspnetcdn.com
+browser.pipe.aria.microsoft.com
+fs.microsoft.com
+! this broke the site c1-officeapps-15.cdn.office.net
+! this broke the site c1-onenote-15.cdn.office.net
