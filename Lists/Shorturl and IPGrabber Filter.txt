@@ -1,6 +1,6 @@
-!Title = Shorturl & IPGrabber Filter by L33Tech
-!Version = 1.0
-!Autodirect filter
+! Title: Shorturl & IPGrabber Filter by L33Tech
+! Version: 1.0
+! Autodirect filter
 sh.st
 adf.ly
 sh.ly
