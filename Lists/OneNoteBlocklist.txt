@@ -17,3 +17,4 @@ browser.pipe.aria.microsoft.com
 fs.microsoft.com
 azureedge.net
 microsoftonline-p.com
+/aria-web-telemetry-
