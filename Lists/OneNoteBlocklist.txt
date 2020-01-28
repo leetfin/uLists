@@ -15,3 +15,5 @@ ajax.aspnetcdn.com
 aspnetcdn.com
 browser.pipe.aria.microsoft.com
 fs.microsoft.com
+azureedge.net
+microsoftonline-p.com
