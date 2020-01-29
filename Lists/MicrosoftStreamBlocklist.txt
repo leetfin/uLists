@@ -9,6 +9,7 @@ r2.res.office365.com
 r3.res.office365.com
 r4.res.office365.com
 microsoftazuread-sso.com
-onestore.net
-msocdn.com
+onestore.ms
 /amp_analytics
+metrics
+@@.$stylesheet
