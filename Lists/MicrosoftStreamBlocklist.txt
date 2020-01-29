@@ -8,8 +8,6 @@ r1.res.office365.com
 r2.res.office365.com
 r3.res.office365.com
 r4.res.office365.com
-azureedge.net
-azure.net
 microsoftazuread-sso.com
 onestore.net
 msocdn.com
