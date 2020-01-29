@@ -13,4 +13,4 @@ azure.net
 microsoftazuread-sso.com
 onestore.net
 msocdn.com
-assets-yammer.com
+/amp_analytics
