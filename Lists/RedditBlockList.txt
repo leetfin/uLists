@@ -12,3 +12,7 @@ c.aaxads.com
 /tag
 googletagservices.com
 redditmedia.com/gtm/jail?
+
+! From uBlock Privacy
+! https://www.reddit.com/r/uBlockOrigin/comments/b9qsix/new_reddit_tracks_a_ton_more_data_someone_said/
+||reddit.com/api/jail/$xhr,1p
