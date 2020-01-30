@@ -1,0 +1,1287 @@
+! Title: Messy All-In-One Blocklist by L33Tech
+! Includes so many lists
+
+! First of all, my lists.
+
+! Title: Shorturl & IPGrabber Filter by L33Tech
+! Version: 1.0
+! Autodirect filter
+sh.st
+adf.ly
+sh.ly
+t.co
+g.co
+goo.gl
+tiny.cc
+ow.ly
+bit.
+ai6.net
+tinyurl.com
+tinypass.com
+shorturl.at
+is.gd
+bit.do
+buff.ly
+geni.us
+a.co
+mcaf.ee
+su.pr
+rebrandly.com
+rebrand.ly
+budurl.me
+bl.ink
+moourl.com
+
+!Probably Malicious - IP Grabbers
+iplogger.org
+2no.co
+iplogger.co
+iplogger.com
+yip.su
+iplogger.ru
+iplogger.info
+ezstat.ru
+o2ip.ru
+iplis.ru
+ipgrabber.ru
+ipgraber.ru
+grabify.link
+
+!Merged Lists for uBlock Origin by L33Tech
+! Includes 0131 Block List, Adblock the NSA, ayacat's power list (I think) and more small lists.
+! Includes: Anti APKMirror Ads and Countdown
+! Includes: BARB/BAR 2 lists
+! Includes basic tracking Disconnect.me
+
+# Basic tracking list by Disconnect
+# License: GPLv3
+# Contact: support [at] disconnect.me
+
+adjust.io
+airbrake.io
+appboy.com
+appsflyer.com
+apsalar.com
+bango.combango.org
+bango.net
+basic-check.disconnect.me
+bkrtx.com
+bluekai.com
+bugsense.com
+burstly.com
+chartboost.com
+count.ly
+crashlytics.com
+crittercism.com
+custom-blacklisted-tracking-example.com
+do-not-tracker.org
+eviltracker.net
+flurry.com
+getexceptional.com
+inmobi.com
+jumptap.com
+localytics.com
+mixpanel.com
+mobile-collector.newrelic.com
+mobileapptracking.com
+playtomic.com
+stathat.com
+supercell.net
+tapjoy.com
+trackersimulator.org
+usergrid.com
+vungle.com
+
+! Stop making some tears!
+||apkmirror.com/wp-content/themes/APKMirror/images/sadkitten.png$important
+
+! DOM
+apkmirror.com##.OUTBRAIN
+apkmirror.com##.appRow:if(.gooWidget)
+apkmirror.com##.advertisement-text
+apkmirror.com##.amazon-ad
+apkmirror.com##.downloadCountdown
+apkmirror.com##.gooWidget
+apkmirror.com##.google-ad-leaderboard
+apkmirror.com##.google-ad-square-sidebar
+apkmirror.com###sidebar .listWidget:has-text(/Follow APK Mirror/)
+
+! 3P domains block
+||amazon-adsystem.com$domain=apkmirror.com
+||consensu.org$domain=apkmirror.com
+||crsspxl.com$domain=apkmirror.com
+||google-analytics.com$domain=apkmirror.com
+||googlesyndication.com$domain=apkmirror.com
+||instant.page$domain=apkmirror.com
+||outbrain.com$domain=apkmirror.com
+||pagefair.*$domain=apkmirror.com
+||pro-market.net$domain=apkmirror.com
+||quantserve.com$domain=apkmirror.com
+||referrer.disqus.com$domain=apkmirror.com
+||scorecardresearch.com$domain=apkmirror.com
+
+2leep.com
+adblade.com
+adsnative.com
+cdn.nmcdn.us
+content-ad.net
+content.ad
+mgid.com
+newsmaxfeednetwork.com
+outbrain.com
+revcontent.com
+taboola.com
+zergnet.com
+assets.cookieconsent.silktide.com
+policy.cookiereports.com
+
+! Scriptlets
+apkmirror.com##script:inject(abort-on-property-read.js, visibleAds)
+apkmirror.com##script:inject(abort-on-property-write.js, #downloadCountdownBar)
+apkmirror.com##script:inject(abort-on-property-write.js, ranTwice)
+apkmirror.com##script:inject(abort-on-property-write.js, timerInterval)
+/s_code*.js|
+http://click.adv.livedoor.com/
+image.click.livedoor.com
+210.155.151.148/images/
+impact-ad.jp
+ai.yimg.jp/bdv/
+rst/rstdtl_accesscnt
+http://*.shinobi.jp/*
+http://x1.goo.ne.jp/p/j.php
+RdmReviewAd.js
+*/adimage/
+2o7.net
+top_photo.js
+tabelog.com/blog_parts
+tracer.jp
+analyzer*.fc2.com
+image.excite.co.jp/ng/
+dlv.itmedia.jp/adsv/
+!
+!Yahoo!J
+yeas.yahoo.co.jp/n
+overture.com
+ov.yahoo.co.jp
+im.ov.yahoo.co.jp/js_flat/
+yjaxc.yahoo.co.jp/js/yjaxc.js
+!
+microad.jp
+ads*.msn.com
+motu.trustclick.ne.jp/mbjs
+at.4travel.jp
+!
+!MAYBE SAFE OR RARE AS FOLLOWS
+eiga.com/ad/*
+/images/banner/*
+/images/bbs/loan_top_148x148.jpg
+show_ads.js
+img.itmedia.jp/so/images/
+!
+!
+! elements
+tabelog.com#div(kakaku-list)
+#div(listing_ad_top)
+kakaku.com#div(footerNavi-new)
+livedoor.com#table(id=pr)
+livedoor.com#p(megaText)
+
+zone "bitggo.com" { type master; notify no; file "null.zone.file"; };
+zone "j8552s.trade" { type master; notify no; file "null.zone.file"; };
+zone "coinsupergive.live" { type master; notify no; file "null.zone.file"; };
+zone "thailoadtest.com" { type master; notify no; file "null.zone.file"; };
+zone "smrdr46.life" { type master; notify no; file "null.zone.file"; };
+zone "890m.com" { type master; notify no; file "null.zone.file"; };
+zone "heliosnetwork.org" { type master; notify no; file "null.zone.file"; };
+zone "kayanteiss.xyz" { type master; notify no; file "null.zone.file"; };
+zone "churchofthenigers.gq" { type master; notify no; file "null.zone.file"; };
+zone "pololo.gq" { type master; notify no; file "null.zone.file"; };
+zone "mybluemix.net" { type master; notify no; file "null.zone.file"; };
+zone "generalsetting.ovh" { type master; notify no; file "null.zone.file"; };
+zone "ussrnewspro.info" { type master; notify no; file "null.zone.file"; };
+zone "ltc-performance.com" { type master; notify no; file "null.zone.file"; };
+zone "efax-online.xyz" { type master; notify no; file "null.zone.file"; };
+zone "hsbc.com.hk" { type master; notify no; file "null.zone.file"; };
+zone "icda.com" { type master; notify no; file "null.zone.file"; };
+zone "trailsantoantonio.com" { type master; notify no; file "null.zone.file"; };
+zone "fifopm.ml" { type master; notify no; file "null.zone.file"; };
+zone "happycatelectric.com" { type master; notify no; file "null.zone.file"; };
+zone "kpc.co.id" { type master; notify no; file "null.zone.file"; };
+zone "f3site.top" { type master; notify no; file "null.zone.file"; };
+zone "fchorlando.com" { type master; notify no; file "null.zone.file"; };
+zone "calciotuniso.gq" { type master; notify no; file "null.zone.file"; };
+zone "dagher-co.com" { type master; notify no; file "null.zone.file"; };
+zone "admiraltyprivatemas.com" { type master; notify no; file "null.zone.file"; };
+zone "bravenet.com" { type master; notify no; file "null.zone.file"; };
+zone "09yumail-mrm.ru" { type master; notify no; file "null.zone.file"; };
+zone "agenziaentrate.icu" { type master; notify no; file "null.zone.file"; };
+zone "gappsapi.live" { type master; notify no; file "null.zone.file"; };
+zone "stydbui56.live" { type master; notify no; file "null.zone.file"; };
+zone "hollagift.com" { type master; notify no; file "null.zone.file"; };
+zone "shnvme.com" { type master; notify no; file "null.zone.file"; };
+zone "joincheckout.com" { type master; notify no; file "null.zone.file"; };
+zone "afleads.com" { type master; notify no; file "null.zone.file"; };
+zone "assets-landingi.com" { type master; notify no; file "null.zone.file"; };
+zone "frees.best" { type master; notify no; file "null.zone.file"; };
+zone "freemobile.best" { type master; notify no; file "null.zone.file"; };
+zone "infra.systems" { type master; notify no; file "null.zone.file"; };
+zone "steemeth.com" { type master; notify no; file "null.zone.file"; };
+zone "behindcorona.com" { type master; notify no; file "null.zone.file"; };
+zone "nuremburg.us" { type master; notify no; file "null.zone.file"; };
+zone "websitewelcome.com" { type master; notify no; file "null.zone.file"; };
+zone "directannonce.live" { type master; notify no; file "null.zone.file"; };
+zone "u2directs.world" { type master; notify no; file "null.zone.file"; };
+! scammers use xero.com a lot, so be gone
+zone "xero.com" { type master; notify no; file "null.zone.file"; };
+zone "torvind.com" { type master; notify no; file "null.zone.file"; };
+zone "tredman.com" { type master; notify no; file "null.zone.file"; };
+zone "etcodes.com" { type master; notify no; file "null.zone.file"; };
+zone "protect-your-privacy.net" { type master; notify no; file "null.zone.file"; };
+zone "mrelko.com" { type master; notify no; file "null.zone.file"; };
+zone "exdynsrv.com" { type master; notify no; file "null.zone.file"; };
+zone "adxprtz.com" { type master; notify no; file "null.zone.file"; };
+zone "hitcpm.com" { type master; notify no; file "null.zone.file"; };
+zone "terrambmsads.com" { type master; notify no; file "null.zone.file"; };
+zone "offergold.online" { type master; notify no; file "null.zone.file"; };
+zone "mobiletoolapps.com" { type master; notify no; file "null.zone.file"; };
+zone "mobile81.com" { type master; notify no; file "null.zone.file"; };
+zone "mduymg.com" { type master; notify no; file "null.zone.file"; };
+zone "agbjtgrzbslv.pw" { type master; notify no; file "null.zone.file"; };
+zone "scottdrury.org" { type master; notify no; file "null.zone.file"; };
+zone "rarenok.biz" { type master; notify no; file "null.zone.file"; };
+zone "et-code.ru" { type master; notify no; file "null.zone.file"; };
+zone "mcloudglobal.com" { type master; notify no; file "null.zone.file"; };
+zone "lifestylejournal.com" { type master; notify no; file "null.zone.file"; };
+zone "searchfortplus.com" { type master; notify no; file "null.zone.file"; };
+zone "gall-tarquin.com" { type master; notify no; file "null.zone.file"; };
+zone "bravo-dog.com" { type master; notify no; file "null.zone.file"; };
+zone "runtnc.net" { type master; notify no; file "null.zone.file"; };
+zone "clicktabs.net" { type master; notify no; file "null.zone.file"; };
+zone "bitadexchange.com" { type master; notify no; file "null.zone.file"; };
+zone "get-express-vpn.com" { type master; notify no; file "null.zone.file"; };
+zone "akamaized.net" { type master; notify no; file "null.zone.file"; };
+zone "gemius.com" { type master; notify no; file "null.zone.file"; };
+zone "crashlytics.com" { type master; notify no; file "null.zone.file"; };
+zone "af1.delphi.lv" { type master; notify no; file "null.zone.file"; };
+zone "dsp.adkernel.com" { type master; notify no; file "null.zone.file"; };
+zone "rp.gwallet.com" { type master; notify no; file "null.zone.file"; };
+zone "connexity.net" { type master; notify no; file "null.zone.file"; };
+zone "s3xified.com" { type master; notify no; file "null.zone.file"; };
+zone "e1.emxdgt.com" { type master; notify no; file "null.zone.file"; };
+zone "ibillboard.com" { type master; notify no; file "null.zone.file"; };
+zone "ctnsnet.com" { type master; notify no; file "null.zone.file"; };
+zone "creativecdn.com" { type master; notify no; file "null.zone.file"; };
+zone "seveloculas.info" { type master; notify no; file "null.zone.file"; };
+zone "sd5doozry8.com" { type master; notify no; file "null.zone.file"; };
+zone "appdatum.com" { type master; notify no; file "null.zone.file"; };
+zone "gaming-guide-online.com" { type master; notify no; file "null.zone.file"; };
+zone "domainestore.com" { type master; notify no; file "null.zone.file"; };
+zone "dcdz.info" { type master; notify no; file "null.zone.file"; };
+zone "user-api.com" { type master; notify no; file "null.zone.file"; };
+zone "ad.lcads.ru" { type master; notify no; file "null.zone.file"; };
+zone "an.yandex.ru" { type master; notify no; file "null.zone.file"; };
+
+www.textnow.com##.flex-fill.flex-row > .rotation-manager-slot
+www.textnow.com###banner
+www.textnow.com###rectSlotAd
+www.textnow.com##.interstitial-banner
+
+||media1.shmoop.com/images/general/shmooptube_ad_literature.png$image
+
+blog.renren.com##[id^="blogTwoAD"]
+blog.renren.com##.float-left.clearfix.link_name
+
+wikia.com###OriginPlatformAdUnit-3969-overthepage
+
+www.higherlowergame.com###adPopup
+||www.higherlowergame.com/rubicon-banner.html?ad_type=banner$subdocument,domain=www.higherlowergame.com
+||s0.2mdn.net/instream/video/client.js$script,domain=www.higherlowergame.com,important
+||imasdk.googleapis.com/js/core/bridge3.192.0_en.html$subdocument,domain=www.higherlowergame.com,important
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=www.higherlowergame.com,important
+
+www.youtube.com###masthead-ad
+
+nytimes.com##[id^="medium-rectangle-ad-"]
+nytimes.com##[id^="story-ad-"]
+
+pandora.tv##.section_adarea
+pandora.tv###pantv_down_div
+pandora.tv##[id^="sAdSmall_"]
+pandora.tv##[id^="sAdBig_"]
+pandora.tv##[id^="left_ad_"]
+pandora.tv###ad_toast_area
+pandora.tv###prism_paing_ad
+pandora.tv##.new_adsambox03
+
+www.pixiv.net##.ad-footer
+www.pixiv.net##.area_new > .area_inside
+
+www.programmableweb.com###apis
+www.programmableweb.com##.bottom-endor-commer-wrapper
+www.programmableweb.com##[id^="block-block-"]
+
+discord.me##[href$="-discord-2019"]
+
+www.nbcnews.com##.ad-break
+
+globalnews.ca##.story-ad
+
+www.urbandictionary.com##.da-panel:nth-of-type(4)
+www.urbandictionary.com###google_ads_iframe_\/1031683\/UD_ROS_728x90_ATF_Flex_0__container__
+www.urbandictionary.com###dark_top
+www.urbandictionary.com##.panel-margin.dfp-panel
+
+www.quora.com##[id$="_wrapper"].content_rectangle
+
+thefeecalculator.com##.ad
+thefeecalculator.com##.adsbygoogle
+
+convertio.co##.content-wrapper > .blur-bg-wrap
+convertio.co##.text-center.adb_wrapper_off
+convertio.co##.content-wrapper > .destination
+
+www.cbc.ca##[id^="bigbox-fixed-"]
+www.cbc.ca##.responsive
+
+shellshock.io###bigAd
+shellshock.io###aipGameContainer
+
+www.mms.com##.opened_overlay.bg
+www.mms.com##.opened_overlay.form.agegate
+
+readthedocs.io##.keep-us-sustainable
+
+web.fc2.com###fc2_ad_box
+web.fc2.com###fc2_bottom_bnr
+
+suumo.jp###bannerContent
+suumo.jp###bannerPanel
+
+loritta.website##.please-disable-modal
+
+www.webmd.com##.-mor
+
+! Spotify (1host overkill)
+@@||guc-dealer.spotify.com^$xmlhttprequest,domain=open.spotify.com
+@@||guc-spclient.spotify.com^$xmlhttprequest,domain=open.spotify.com
+
+minecraft-tracker.com##[id^="adblock"]
+
+www.ciel103.com###publicite-entete
+www.ciel103.com###cboxOverlay
+www.ciel103.com###colorbox
+www.ciel103.com/assets/js/ads.js
+
+www.tumblr.com##div[id^="standalone-ad"]
+www.tumblr.com##.sidebar-ad--sticky.sidebar-ad
+
+blog.fc2.com###fc2_bottom_bnr
+blog.fc2.com###e
+
+xrea.com###vdbanner
+
+prnt.sc##.additional
+
+www.forbes.com##.sticky.top-ad-container
+
+slate.com##.ad
+
+www.theguardian.com##.ad-slot
+
+www.ratemyprofessors.com##.ad
+www.ratemyprofessors.com##.sticky-wrapper
+
+worldofsolitaire.com###rac
+worldofsolitaire.com###rahlc
+
+www.wired.co.uk##[id^="ad_"]
+
+www.symbolab.com##.symp
+
+www.linguee.com##[id^=banner_]
+
+skribbl.io###containerFreespace > .adsbygoogle
+
+@@||media*.ledevoir.com$image
+
+en.wikipedia.org##.cbnnr-main
+en.wikipedia.org##.cn-fundraising
+en.wikipedia.org###frb-inline
+
+www.thestar.com##.c-related-articles
+
+www.roblox.com##.sponsored-game
+
+www.reddit.com###overlay-comment-atf
+
+www.mathway.com##.ch-bubble:has(> .ch-ad-icon)
+
+!EU Cookie List
+assets.cookieconsent.silktide.com
+policy.cookiereports.com
+
+!NSA
+
+||bgl1dr1-a-fixed.sancharnet.in
+||bgl1pp1-a-fixed.sancharnet.in
+||bj02.cww.com
+||butt-head.mos.ru
+||dcproxy1.thrunet.com
+||dmn2.bjpeu.edu.cn
+||dns2.net1.it
+||doors.co.kr
+||enterprise.telesat.com.co
+||eol1.egyptonline.com
+||fw433.npic.ac.cn
+||gambero3.cs.tin.it
+||gate.technopolis.kirov.ru
+||hakuba.janis.or.jp
+||imms1.macau.ctm.net
+||indy.fjmu.edu.cn
+||jur.unn.ac.ru
+||kacstserv.kacst.edu.sa
+||kacstserv.kacst.edu.sa
+||known.counsellor.gov.cn
+||kserv.krldysh.ru
+||laleh.itrc.ac.ir
+||m0-s.san.ru
+||mail-gw.jbic.go.jp
+||mail.bangla.net
+||mail.edi.edu.cn
+||mail.hallym.ac.kr
+||mail.hangzhouit.gov.cn
+||mail.hz.zh.cn
+||mail.imamu.edu.sa
+||mail.interq.or.jp
+||mail.ioc.ac.ru
+||mail.issas.ac.cn
+||mail.pmo.ac.cn
+||mail.siom.ac.cn
+||mail.tropmet.res.in
+||mail.tsinghua.edu.cn
+||mail.zzu.edu.cn
+||mail1.371.net
+||mailgate.sbell.com.cn
+||mailgw.thtf.com.cn
+||mailhub.minaffet.gov.rw
+||mails.cneic.com.cn
+||mailscan3.cau.ctm.net
+||mailsrv02.macau.ctm.net
+||mailsvra.macau.ctm.net
+||mbi3.kuicr.kyoto-u.ac.jp
+||mcd-su-2.mos.ru
+||metcoc5cm.clarent.com
+||mipsa.ciae.ac.cn
+||mn.mn.co.cu
+||most.cob.net.ba
+||mpkhi-bk.multi.net.pk
+||msgstore2.pldtprv.net
+||mtccsun.imtech.ernet.in
+||mx1.freemail.ne.jp
+||n02.unternehmen.com
+||nd11mx1-a-fixed.sancharnet.in
+||ndl1mc1-a-fixed.sancharnet.in
+||ndl1mx1-a-fixed.sancharnet.in
+||ndl1pp1-a-fixed.sancharnet.in
+||no1.unternehemen.com
+||no3.unternehmen.org
+||ns.cac.com.cn
+||ns.huawei.com.cn
+||ns.nint.ac.cn
+||ns1.2911.net
+||ns1.multi.net.pk
+||ns2.rosprint.ru
+||ns2.xidian.edu.cn
+||opcwdns.opcw.nl
+||opserver01.iti.net.pk
+||orange.npix.net
+||orion.platino.gov.ve
+||outweb.nudt.edu.cn
+||pdns.nudt.edu.cn
+||petra.nic.gov.jo
+||pop.net21pk.com
+||post.netchina.com.cn
+||postbox.mos.ru
+||public2.zz.ha.cn
+||rayo.pereira.multi.net.co
+||sea.net.edu.cn
+||sea.net.edu.cn
+||sedesol.sedesol.gob.mx
+||segob.gob.mx
+||sky.kies.co.kr
+||smmu-ipv6.smmu.edu.cn
+||smtp.2911.net
+||smtp.macau.ctm.net
+||sonatns.sonatrach.dz
+||sparc.nour.net.sa
+||sps01.office.ctm.net
+||sunhe.jinr.ru
+||sussi.cressoft.com.pk
+||tx.micro.net.pk
+||ultra2.tsinghua.edu.cn
+||unk.vver.kiae.rr
+||unknown.counsellor.gov.cn
+||voyager1.telesat.com.co
+||web-ccfr.tsinghua.edu.cn
+||webnetra.entelnet.bo
+||webserv.mos.ru
+||ws.xjb.ac.cn
+||www.caramail.com
+||www.siom.ac.cn
+||www21.counsellor.gov.cn
+||www21.counsellor.gov.cn
+
+tharbadir.com
+apps0572.tutonhamon35.live
+
+3276817.fls.doubleclick.net
+3610263.fls.doubleclick.net
+3959778.fls.doubleclick.net
+8476114.fls.doubleclick.net
+8494338.fls.doubleclick.net
+8893231.fls.doubleclick.net
+9054599.fls.doubleclick.net
+a1.adform.net
+aax.amazon-adsystem.com
+aax-eu.amazon-adsystem.com
+acdn.adnxs.com
+ad.360yield.com
+ad.atdmt.com
+ad.crwdcntrl.net
+adclick.g.doubleclick.net
+adconfigproxy.azurewebsites.net
+adjust.com
+ads.flurry.com
+ads.mopub.com
+ads.programattik.com
+ads.pubmatic.com
+ads.stickyadstv.com
+adservice.google.com
+adservice.google.nl
+ams1-ib.adnxs.com
+analytics.webads.eu
+api.adjust.com
+api.company-target.com
+api.mixpanel.com
+app.adjust.com
+ariane.abtasty.com
+as-sec.casalemedia.com
+assets.adobedtm.com
+aws-fr.bidswitch.net
+b.measuread.com
+b.scorecardresearch.com
+beacons.gvt2.com
+bidder.criteo.com
+bitdefender.demdex.net
+bitdefender.tt.omtrdc.net
+bs.serving-sys.com
+c.go-mpulse.net
+cdn.krxd.net
+cdn.mouseflow.com
+cdn.mxpnl.com
+cdn.optimizely.com
+cdn.ster.nl
+cdn.tradetracker.net
+cdn.webads.eu
+cdn-pci.optimizely.com
+cm.g.doubleclick.net
+connect.facebook.com
+consent.linksynergy.com
+d.adroll.com
+datacollect6.abtasty.com
+dcinfos.abtasty.com
+dcinfos-cache.abtasty.com
+dev.visualwebsiteoptimizer.com
+dis.eu.criteo.com
+dmp.adform.net
+dpm.demdex.net
+fastlane.rubiconproject.com
+googleads.g.doubleclick.net
+ib.adnxs.com
+ice.360yield.com
+ingress-uni-http-eu.abtasty.com
+insight.adsrvr.org
+js.adsrvr.org
+js.hsadspixel.net
+l.sharethis.com
+loadus.exelator.com
+marktplaats.demdex.net
+match.adsby.bidtheatre.com
+match.adsrvr.org
+match.prod.bidr.io
+mc.yandex.ru
+me-ssl.effectivemeasure.net
+munchkin.marketo.net
+nypi.dc-storm.com
+pagead.l.doubleclick.net
+pagead46.l.doubleclick.net
+partnerad.l.doubleclick.net
+ping.chartbeat.net
+pixel.quantserve.com
+pixel.wp.com
+pixel-origin.mathtag.com
+pool.admedo.com
+pool-com.adizio.iponweb.net
+prd.jwpltx.com
+prebid.adnxs.com
+pubads.g.doubleclick.net
+pubmatic.com
+px.ads.linkedin.com
+rs.fullstory.com
+rtb.mfadsrvr.com
+rtb-csync-eqx.smartadserver.com
+rtl.demdex.net
+s.adroll.com
+s.amazon-adsystem.com
+s.go-mpulse.net
+s.pubmine.com
+s0.2mdn.net
+s7.addthis.com
+sb.scorecardresearch.com
+scdn.cxense.com
+scripts.demandbase.com
+secure.adnxs.com
+secure.quantserve.com
+securepubads.g.doubleclick.net
+segments.company-target.com
+service.maxymiser.net
+sgreen.erne.co
+sjs.bizographics.com
+srv.buysellads.com
+ssl.google-analytics.com
+sslwidget.criteo.com
+static.ads-twitter.com
+static.chartbeat.com
+static.criteo.net
+static.doubleclick.net
+static.hotjar.com
+static.tradetracker.net
+staticxx.facebook.com
+stats.g.doubleclick.net
+sync.search.spotxchange.com
+sync.teads.tv
+tagmans3.adsolutions.com
+tags.crwdcntrl.net
+tc.tradetracker.net
+ti.tradetracker.net
+tools.webads.eu
+track.adform.net
+trackcmp.net
+try.abtasty.com
+w.sharethis.com
+www.adjust.com
+www.w3counter.com
+zalando-nl.nuggad.net
+zalando-nl-dp.nuggad.net
+zala-sync-de.data.nuggad.net
+
+# 2018-08-08 - Partial
+centersmobileappss.com
+best.prizedeal16.info
+deconstructiontheory.com
+go.net-di57.stream
+play.superlzpre.com
+competition1259.check-vestamoney23.loan
+
+# 2018-08-08
+sweeps7878.check-vestamoney59.loan
+play.appiq.mobi
+
+# 2018-08-08
+questionfly.com
+trenced.com
+
+# 2018-08-09
+competition4824.check-bmcmoney67.loan
+
+# 2018-08-09
+4uroffer.com
+p.momoxxio.com
+
+# 2018-08-10
+sweeps7496.check-bcrmoney51.loan
+
+# 2018-08-10
+reward0684.check-bcrmoney19.loan
+
+# 2018-08-18
+game8351.check-tomoney41.loan
+
+# 2018-08-25
+play1341.yourbestprize88.icu
+
+# 2018-08-26
+game9261.funnymoney77.xyz
+
+# 2018-08-26
+mobile1893.lifenymoney72.life
+
+# 2018-08-28
+mobile5278.check-testingyourprize7.life
+
+# 2018-08-28
+play4133.check-testingyourprize26.life
+momoxxio.com
+
+# 2018-08-30
+game5369.whereisyour-prize36.live
+www.geniustrainer.net
+
+# 2018-08-31
+best3187.whereisyour-prize71.live
+ver.ibraincollege.com
+
+# 2018-09-01
+mobile3558.whereisyour-prize20.info
+
+# 2018-09-02
+reward7696.whereisyour-prize26.live
+
+# 2018-09-03
+reward0670.your-superprize50.info
+
+# 2018-09-10
+reward4213.takeyourprize9.live
+
+# 2018-09-10
+sweeps9975.takeyourprize75.live
+
+# 2018-09-10
+reward5966.your-superprizes40.life
+realcenter-mobileapps.com
+si.mundome.com
+winner.amazingrewards.nl
+
+# 2018-09-11
+apps0524.takeyourprize50.live
+
+# 2018-09-13
+prize7032.take-your-prize19.live
+
+# 2018-09-13
+mobile7210.takeyourprize67.life
+
+# 2018-09-17
+mobile9343.choose-your-prize87.live
+
+# 2018-09-19
+apps9464.chooseyourprize66.live
+
+# 2018-09-21
+apps0229.chooseyourprize94.life
+
+# 2018-09-21
+prize7941.chooseyourprize39.life
+play.vista-fun.com
+p.t67.me
+bestperforming.site
+
+# 2018-10-21
+reward9522.dpmprize14.life
+realcenter-mobileapps1.com
+the-best-deal-for-you.com
+onwardinated.com
+circultural.com
+click.whatthetrack.com
+
+# 2018-10-22
+game3978.pmrprize91.life
+
+# 2018-10-27
+best5502.ttiprize86.life
+
+# 2018-11-02
+mobile7503.pngprize81.live
+check-out-deal.org
+
+# 2018-11-06 (2)
+cdnproviders.net
+blackjack-casinos.net
+use.photios-raj.com
+use.dauid-iep.com
+redir.mobidirect.info
+
+# 2018-11-08 (2)
+foxcasino8.com
+go.net-dk32.stream
+
+# 2018-11-12
+game7919.srvrize8.live
+usd.photios-raj.com
+usd.dauid-iep.com
+visit.net-bu95.stream
+offers.monthlywinners.com
+play.clicksaints.com
+
+# 2018-11-16
+prize7533.crvrize13.live
+
+# 2018-11-20
+prize2421.mzdrize46.live
+
+# 2018-12-14
+game0218.repteam56.live
+
+# 2019-02-19
+best7798.something-wrong11.life
+
+# 2019-03-05
+competition7179.funproxyservers17.icu
+realcenter-mobileapps2.com
+get-the-best-cool-deal.com
+
+# 2019-03-09
+reward7119.hotmoneyfucklife14.live
+
+# 2019-03-11
+reward3827.easysearch28.agency
+
+# 2019-03-20
+prize3371.bigbigabum38.icu
+
+# 2019-03-26
+sweeps7896.sadman36.live
+
+# 2019-03-31
+apps6436.trueredirect97.icu
+
+# 2019-04-07
+play9403.bigbughere3.icu
+
+# 2019-08-17
+ladsblue.com
+bestdateshere-for23.com
+prize3293.fastsearchday63.live
+
+# 2019-08-17
+rev.sabs-news.info
+
+# 2019-08-17
+watchonline.casa
+app7272.truefalserdr92.life
+youtubee.net
+
+# 2019-08-17
+game2298.falseortruerdr3.life
+
+# 2019-08-19
+game9752.checkingforward68.life
+
+# 2019-09-04
+app5808.temporaryserverhere65.life
+
+# 2019-09-04
+leadnote.me
+
+# 2019-09-06
+play0000.temporaryserverhere46.live
+totogaming.com
+
+# 2019-09-15
+mobilegogle.com
+artpixelk.com
+go.trackiteazy.com
+apps2170.punksgotoserver36.live
+worldvictory.zone
+
+# 2019-09-17
+play4486.pingtopingsrv35.life
+play.vista-fun.net
+worldvictory.vip
+
+# 2019-09-18
+sweeps9640.pingawaysrv244.life
+join.appiq.mobi
+
+# 2019-09-24
+phonotyper.com
+clclo.pro
+viber.gr-update.online
+reward3753.zumusrv55.life
+weledying-jessed.com
+
+# 2019-09-28
+sweeps9147.ceapass246.life
+www.mgid.com
+mediasvideo.live
+brainberries.co
+
+# 2019-10-04
+app4863.fastfreeredics2.com
+
+# 2019-10-07
+reward6032.fastfreeredics101.live
+thewinningplace.com
+
+# 2019-10-12
+time-for-investment.com
+
+# 2019-10-27
+benidoranon.com
+yealnk.com
+solutionstr.space
+partysexs.com
+
+# 2019-11-09
+sdfjjd.globatds.com
+www.bet-at-home843.com
+
+# 2019-11-24
+mega-prize-area.life
+reward1920.nonamereverse11.live
+mobappcenter.com
+gstenplus.alldayhustler.com
+
+# 2019-11-25
+prize1659.nonamehome31.live
+
+
+# 2018-08-30
+http://game5369.whereisyour-prize36.live/?utm_medium=oxxGrJ1EO8rl%2flkgHhDHtdaJe%2b6y3ml38Z%2b1ZX9QaLo%3d&t=main7_6
+http://centersmobileappss.com/away.php
+http://4uroffer.com/new/?service=TW9tbW94aW8%3D&country=SLO&reffid=d8a0b9b6ff756daf8e820db1749392a0&networkid=23061&optinfo=2319174112&publisher=2715
+http://p.momoxxio.com/slo/galaxys903/?cpid=23061_2319174112&publisher=2715
+http://p.momoxxio.com/slo/galaxys903/#/!
+https://www.geniustrainer.net/welcome.html?aff=4305&theme=1500&clickid=w7ADAAIPL1NVQGEGHUT6B7JU&pub=9775
+http://game5369.whereisyour-prize36.live/?utm_medium=oxxGrJ1EO8rl%2flkgHhDHtdaJe%2b6y3mlr8Z%2b1ZX9QaLo%3d&t=main7_6
+
+# 2018-08-31
+http://best3187.whereisyour-prize71.live/?utm_medium=oxxGrJ1EO8rl%2flkgHhDHtdaJe%2b6y3ml38Z%2b1ZX9QaLo%3d&t=main7_6
+http://centersmobileappss.com/away.php
+http://4uroffer.com/new/?service=TW9tbW94aW8%3D&country=SLO&reffid=d8a0b9b6ff756daf8e820db1749392a0&networkid=23061&optinfo=2320834275&publisher=2715
+http://p.momoxxio.com/slo/galaxys903/?cpid=23061_2320834275&publisher=2715
+http://p.momoxxio.com/slo/galaxys903/#/!
+https://www.geniustrainer.net/welcome.html?aff=4305&theme=1500&clickid=wB8E3KPNAL6SNEFG1K6GHMAC&pub=9775
+https://ver.ibraincollege.com/index.html?trid=f218922b-71ea-46ca-a343-e06e9177ea71&language=EN
+https://ver.ibraincollege.com/ver.html?trid=f218922b-71ea-46ca-a343-e06e9177ea71&language=EN
+https://www.geniustrainer.net/welcome.html?aff=4305&theme=1500&clickid=wM7HB2MH8ESH7EFG1I6GA3C0&pub=9775
+http://best3187.whereisyour-prize71.live/?utm_medium=oxxGrJ1EO8rl%2flkgHhDHtda%C5%BE
+
+# 2018-09-01
+http://mobile3558.whereisyour-prize20.info/?utm_medium=oxxGrJ1EO8rl%2flkgHhDHtdaJe%2b6y3ml38Z%2b1ZX9QaLo%3d&t=main7_6
+http://centersmobileappss.com/away.php
+http://4uroffer.com/new/?service=TW9tbW94aW8%3D&country=SLO&reffid=d8a0b9b6ff756daf8e820db1749392a0&networkid=23061&optinfo=2322084035&publisher=2715
+http://p.momoxxio.com/slo/galaxys903/?cpid=23061_2322084035&publisher=2715
+http://p.momoxxio.com/slo/galaxys903/#/!
+
+# 2018-09-02
+http://reward7696.whereisyour-prize26.live/?utm_medium=oxxGrJ1EO8rl%2flkgHhDHtdaJe%2b6y3ml38Z%2b1ZX9QaLo%3d&t=main7_6
+http://centersmobileappss.com/away.php
+
+# 2018-09-03
+http://reward0670.your-superprize50.info/?utm_medium=oxxGrJ1EO8rl%2flkgHhDHtdaJe%2b6y3ml38Z%2b1ZX9QaLo%3d&t=main7_6
+
+# 2018-09-10
+http://reward5966.your-superprizes40.life/?utm_medium=oxxGrJ1EO8rl%2flkgHhDHtdaJe%2b6y3ml38Z%2b1ZX9QaLo%3d&t=main7_6
+http://realcenter-mobileapps.com/away.php
+https://si.mundome.com/lp/4487/?af=1972&af_code=102806013df36ab51c0486481537ba&af_e=1060
+https://si.mundome.com/lp/4487/#/!
+http://winner.amazingrewards.nl/?utm_medium=15330e865de268bf6534fb79ab4973685c47bf9b&utm_campaign=luckywinnergeneric
+http://winner.amazingrewards.nl/?utm_term=6599661543212713785&clickverify=1&utm_content=fdc2c69a9caf9dad919495a1909193a5bad5b8ccbebf8f8a87b3868781b79984b8bb88b8b98f8cbc828380b186b584c2f5f4fff5fbbfd5f3f1bd90a3a297a6a1eaebe88f8f839f88e2e3d1e1d5d0d1e5cccdcff9cecfc9c5c2c4c1c0f6c7c4c1fafbfafaf8fffcacfbf3f8f1f671
+http://winner.amazingrewards.nl/?utm_term=6599661543212713785&clickverify=1&utm_content=fdc2c69a9caf9dad919495a1909193a5bad5b8ccbebf8f8a87b3868781b79984b8bb88b8b98f8cbc828380b186b584c2f5f4fff5fbbfd5f3f1bd90a3a297a6a1eaebe88f8f839f88e2e3d1e1d5d0d1e5cccdcff9cecfc9c5c2c4c1c0f6c7c4c1fafbfafaf8fffcacfbf3f8f1f671#
+https://questionfly.com/c/5a37c8ad-f104-11e5-9f1f-0626cc8adced?pubid=stw&subid=6599661543212713785
+https://questionfly.com/h/c584e042-b525-11e8-bdbb-014500605ec1/c/5a37c8ad-f104-11e5-9f1f-0626cc8adced/?pubid=stw&subid=6599661543212713785&_i=1&_s=c5848e6c-b525-11e8-9297-014500605e24&_r=winner.amazingrewards.nl&_n=&_d=7|1|-120|0|1|1|t|t|375x667|0|2|Google%20Inc.|1|24|24|192|74-5916198c|0|0|628|0|2|t|t|y9j1d2,qmpy4a,u|en,en-GB,sl,sl-SI|Win32|aaaa0|20030107|5.0%20(iPhone;%20CPU%20iPhone%20OS%2011_0%20like%20Mac%20OS%20X)%20AppleWebKit/604.1.38%20(KHTML,%20like%20Gecko)%20Version/11.0%20Mobile/15A372%20Safari/604.1|0|8|192.168.1.18|u|t|t|t|3vty7|WebGL%201.0%20(OpenGL%20ES%202.0%20Chromium)|Google%20Inc.|ANGLE%20(NVIDIA%20GeForce%20GTX%20750%20Ti%20Direct3D11%20vs_5_0%20ps_5_0)|ex:nq6ww|1|u|t|n|n|n|n|981x1744|0|1|0|t
+
+# 2018-09-13
+http://prize7032.take-your-prize19.live/?utm_medium=oxxGrJ1EO8rl%2flkgHhDHtdaJe%2b6y3ml38Z%2b1ZX9QaLo%3d&t=main7_6
+https://www.geniustrainer.net/welcome.html?aff=4138&theme=1500&clickid=2337320940&pub=2715
+
+# 2018-09-13
+http://mobile7210.takeyourprize67.life/?utm_medium=oxxGrJ1EO8rl%2flkgHhDHtdaJe%2b6y3ml38Z%2b1ZX9QaLo%3d&t=main7_6
+http://realcenter-mobileapps.com/away.php
+https://www.geniustrainer.net/welcome.html?aff=4138&theme=1500&clickid=2337446151&pub=2715
+https://ver.ibraincollege.com/index.html?trid=8f31c499-95ee-489d-814e-dbad2cbacaa1&language=EN
+
+# 2018-09-17
+http://mobile9343.choose-your-prize87.live/?utm_medium=oxxGrJ1EO8rl%2flkgHhDHtdaJe%2b6y3ml38Z%2b1ZX9QaLo%3d&t=main7_6
+http://realcenter-mobileapps.com/away.php
+http://4uroffer.com/new/?service=TW9tbW94aW8%3D&country=SLO&reffid=d8a0b9b6ff756daf8e820db1749392a0&networkid=23061&optinfo=2343182518&publisher=2715
+http://p.momoxxio.com/slo/galaxys903/?cpid=23061_2343182518&publisher=2715
+http://p.momoxxio.com/slo/galaxys903/#/!
+https://www.geniustrainer.net/welcome.html?aff=4138&theme=1500&clickid=2343182518&pub=2715
+
+# 2018-09-19
+http://apps9464.chooseyourprize66.live/?utm_medium=oxxGrJ1EO8rl%2flkgHhDHtdaJe%2b6y3ml38Z%2b1ZX9QaLo%3d&t=main7_6
+
+# 2018-09-21
+http://apps0229.chooseyourprize94.life/?utm_medium=oxxGrJ1EO8rl%2flkgHhDHtdaJe%2b6y3ml38Z%2b1ZX9QaLo%3d&t=main7_6
+
+# 2018-09-21
+http://prize7941.chooseyourprize39.life/?utm_medium=oxxGrJ1EO8rl%2flkgHhDHtdaJe%2b6y3ml38Z%2b1ZX9QaLo%3d&t=main7_6
+http://realcenter-mobileapps.com/away.php
+https://play.vista-fun.com/lpx/mrCI80V5qb?aff=ck-adtra&reqid=2056948661&oid=23259&affid=1354&s1=1060&s2=1020f9454425b1e9f8139c3ec8a33c&s3=&s4=
+https://play.vista-fun.com/lpx/mrCI80V5qb#/!
+https://p.t67.me/r/?sc=5b&mv=SM&sv=SWG&ooid=23259&oreqid=2056948661&msisdn=&operator=&oaffid=1354
+https://bestperforming.site/c/1807248e-10a1-11e7-b975-06867f9fc2d7?reqid=2056948661&affid=538_4a6df2e5-f7db-404d-b409-5845d402bac1_SM_5b_1354
+https://bestperforming.site/h/2a301a74-bda6-11e8-a67b-01400abdee00/c/1807248e-10a1-11e7-b975-06867f9fc2d7/?reqid=2056948661&affid=538_4a6df2e5-f7db-404d-b409-5845d402bac1_SM_5b_1354&_i=1&_s=2a2fe32e-bda6-11e8-9148-01400abdeebd&_r=&_n=&_d=7|1|-120|0|1|1|t|t|1024x1366|0|2|Google%20Inc.|1|24|24|192|74-5916198c|0|0|506|1|3|t|t|y9j1d2,qmpy4a,u|en,en-GB,sl,sl-SI|Win32|aaaa0|20030107|5.0%20(iPad;%20CPU%20OS%2011_0%20like%20Mac%20OS%20X)%20AppleWebKit/604.1.34%20(KHTML,%20like%20Gecko)%20Version/11.0%20Mobile/15A5341f%20Safari/604.1|0|8|192.168.1.18|u|t|t|t|3vty7|WebGL%201.0%20(OpenGL%20ES%202.0%20Chromium)|Google%20Inc.|ANGLE%20(NVIDIA%20GeForce%20GTX%20750%20Ti%20Direct3D11%20vs_5_0%20ps_5_0)|ex:nq6ww|1|u|t|n|n|n|n|1024x1366|0|1|t|0|t
+https://bestperforming.site/v/2a301a74-bda6-11e8-a67b-01400abdee00/c/1807248e-10a1-11e7-b975-06867f9fc2d7/?reqid=2056948661&affid=538_4a6df2e5-f7db-404d-b409-5845d402bac1_SM_5b_1354&_i=1&_s=2a2fe32e-bda6-11e8-9148-01400abdeebd&_r=&_n=&_d=7|1|-120|0|1|1|t|t|1024x1366|0|2|Google%20Inc.|1|24|24|192|74-5916198c|0|0|506|1|3|t|t|y9j1d2,qmpy4a,u|en,en-GB,sl,sl-SI|Win32|aaaa0|20030107|5.0%20(iPad;%20CPU%20OS%2011_0%20like%20Mac%20OS%20X)%20AppleWebKit/604.1.34%20(KHTML,%20like%20Gecko)%20Version/11.0%20Mobile/15A5341f%20Safari/604.1|0|8|192.168.1.18|u|t|t|t|3vty7|WebGL%201.0%20(OpenGL%20ES%202.0%20Chromium)|Google%20Inc.|ANGLE%20(NVIDIA%20GeForce%20GTX%20750%20Ti%20Direct3D11%20vs_5_0%20ps_5_0)|ex:nq6ww|1|u|t|n|n|n|n|1024x1366|0|1|t|0|t
+https://trenced.com/l/8c579bd6-2433-11e6-9af1-02401b02a2b5/v/2a8767fc-bda6-11e8-bda0-11411f3f7e61/
+https://bestperforming.site/h/2a301a74-bda6-11e8-a67b-01400abdee00/c/1807248e-10a1-11e7-b975-06867f9fc2d7/?reqid=2056948661&affid=538_4a6df2e5-f7db-404d-b409-5845d402bac1_SM_5b_1354&_i=2&_s=2a2fe32e-bda6-11e8-9148-01400abdeebd&_r=&_n=&_d=7%7C1%7C-120%7C0%7C1%7C1%7Ct%7Ct%7C1024x1366%7C0%7C2%7CGoogle+Inc.%7C1%7C24%7C24%7C192%7C74-5916198c%7C0%7C0%7C506%7C1%7C3%7Ct%7Ct%7Cy9j1d2%2Cqmpy4a%2Cu%7Cen%2Cen-GB%2Csl%2Csl-SI%7CWin32%7Caaaa0%7C20030107%7C5.0+%28iPad%3B+CPU+OS+11_0+like+Mac+OS+X%29+AppleWebKit%2F604.1.34+%28KHTML%2C+like+Gecko%29+Version%2F11.0+Mobile%2F15A5341f+Safari%2F604.1%7C0%7C8%7C192.168.1.18%7Cu%7Ct%7Ct%7Ct%7C3vty7%7CWebGL+1.0+%28OpenGL+ES+2.0+Chromium%29%7CGoogle+Inc.%7CANGLE+%28NVIDIA+GeForce+GTX+750+Ti+Direct3D11+vs_5_0+ps_5_0%29%7Cex%3Anq6ww%7C1%7Cu%7Ct%7Cn%7Cn%7Cn%7Cn%7C1024x1366%7C0%7C1%7Ct%7C0%7Ct
+https://bestperforming.site/v/2a301a74-bda6-11e8-a67b-01400abdee00/c/1807248e-10a1-11e7-b975-06867f9fc2d7/?reqid=2056948661&affid=538_4a6df2e5-f7db-404d-b409-5845d402bac1_SM_5b_1354&_i=2&_s=2a2fe32e-bda6-11e8-9148-01400abdeebd&_r=&_n=&_d=7%7C1%7C-120%7C0%7C1%7C1%7Ct%7Ct%7C1024x1366%7C0%7C2%7CGoogle+Inc.%7C1%7C24%7C24%7C192%7C74-5916198c%7C0%7C0%7C506%7C1%7C3%7Ct%7Ct%7Cy9j1d2%2Cqmpy4a%2Cu%7Cen%2Cen-GB%2Csl%2Csl-SI%7CWin32%7Caaaa0%7C20030107%7C5.0+%28iPad%3B+CPU+OS+11_0+like+Mac+OS+X%29+AppleWebKit%2F604.1.34+%28KHTML%2C+like+Gecko%29+Version%2F11.0+Mobile%2F15A5341f+Safari%2F604.1%7C0%7C8%7C192.168.1.18%7Cu%7Ct%7Ct%7Ct%7C3vty7%7CWebGL+1.0+%28OpenGL+ES+2.0+Chromium%29%7CGoogle+Inc.%7CANGLE+%28NVIDIA+GeForce+GTX+750+Ti+Direct3D11+vs_5_0+ps_5_0%29%7Cex%3Anq6ww%7C1%7Cu%7Ct%7Cn%7Cn%7Cn%7Cn%7C1024x1366%7C0%7C1%7Ct%7C0%7Ct
+https://trenced.com/l/8c579bd6-2433-11e6-9af1-02401b02a2b5/v/2b863566-bda6-11e8-b001-114115b38b00/
+https://www.geniustrainer.net/welcome.html?aff=4138&theme=1500&clickid=2348262185&pub=2715
+
+# 2018-10-21
+http://reward9522.dpmprize14.life/?utm_medium=oxxGrJ1EO8rl%2flkgHhDHtdaJe%2b6y3ml38Z%2b1ZX9QaLo%3d&t=main7_6
+http://realcenter-mobileapps1.com/away.php
+https://the-best-deal-for-you.com/page?cam=10571&country=si&pub=110&r=3-bf62druhgt7tcnkotnrg&a=3421
+http://click.whatthetrack.com/?utm_medium=6f4b6021174ab01d3b75d78179f6945f193e152a&utm_campaign=Exit-Mainstream
+http://click.whatthetrack.com/?utm_term=6614704958224729307&clickverify=1&utm_content=fdc2c69a9caf9dad969291a1919495a5bad5b8ccbebf888c83b3878287b79984b8bb88bbbd8f8cbc828380b186b5aab3a8ae98def1f0fbf1f7b3d9fff5b994a7deebdaddeeefec8b838f9384e6e7d5e5cecac9f9c9cccdfdc2c3c5c9c6c0c5c4cafbf8fdfefffefef4f3f0a0fff7fcf5eaaa
+https://onwardinated.com/c/5a37c8ad-f104-11e5-9f1f-0626cc8adced?pubid=stw&subid=6614704958224729307
+https://onwardinated.com/h/d2b33d54-d500-11e8-bfe9-01422929a20c/c/5a37c8ad-f104-11e5-9f1f-0626cc8adced/?pubid=stw&subid=6614704958224729307&_i=1&_s=d2b2edb8-d500-11e8-bcd7-01422929a20c&_r=click.whatthetrack.com&_n=&_d=7|1|-120|0|1|1|t|t|411x731|0|2.625|Google%20Inc.|1|24|24|252|74-5916198c|0|0|380|0|3|t|t|y9j1d2,qmpy4a,u|en,en-GB,sl,sl-SI|Win32|aaaa0|20030107|5.0%20(Linux;%20Android%208.0;%20Pixel%202%20Build/OPD3.170816.012)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/69.0.3452.0%20Mobile%20Safari/537.36|0|8|192.168.42.28|u|t|t|t|3vty7|WebGL%201.0%20(OpenGL%20ES%202.0%20Chromium)|Google%20Inc.|ANGLE%20(NVIDIA%20GeForce%20GTX%20750%20Ti%20Direct3D11%20vs_5_0%20ps_5_0)|ex:nq6ww|1|u|t|n|n|n|n|980x1744|0|1|t|0|1|t
+https://circultural.com/l/8c579bd6-2433-11e6-9af1-02401b02a2b5/v/d307e818-d500-11e8-9174-114297cc9474/
+
+# 2018-10-22
+http://game3978.pmrprize91.life/?utm_medium=oxxGrJ1EO8rl%2flkgHhDHtdaJe%2b6y3ml38Z%2b1ZX9QaLo%3d&t=main7_6
+
+# 2018-10-27
+http://best5502.ttiprize86.life/?utm_medium=oxxGrJ1EO8rl%2flkgHhDHtdaJe%2b6y3ml38Z%2b1ZX9QaLo%3d&t=main7_6
+http://realcenter-mobileapps1.com/away.php
+https://the-best-deal-for-you.com/page?cam=10387&country=si&pub=110&r=3-bfa1tpa421ctp0ugvblg&a=3421
+
+# 2018-11-02
+http://mobile7503.pngprize81.live/?utm_medium=oxxGrJ1EO8rl%2flkgHhDHtdaJe%2b6y3ml38Z%2b1ZX9QaLo%3d&t=main7_6
+http://realcenter-mobileapps1.com/away.php
+https://check-out-deal.org/page?cam=10387&country=si&pub=110&r=3-bfe9fr69gq8ccgkib4f0&a=3421
+
+# 2018-11-06 (2)
+https://cdnproviders.net/?s=doYwSepFVyHA8bq4uDVpnYzB9x7PO3Tm6%2BBHh7b3d86bWtnEyEr7%2BbxaXqcfFJRHvIYsj7vWiTfP22a4L9Vnaw%3D%3D&src=c3NsZGVjb2Rlci5vcmc%3D
+https://cdnproviders.net/test1-in.php?t=http://blackjack-casinos.net&k=hosted-oswa.org
+https://cdnproviders.net/test1-out.php?ip=redacted&t=http://blackjack-casinos.net&k=hosted-oswa.org
+http://blackjack-casinos.net/
+http://use.photios-raj.com/zcvisitor/a4ccc87d-e1e3-11e8-a8e7-064620279d32?campaignid=3922ef30-8c3b-11e8-af39-0e41d0acbc1a
+http://use.dauid-iep.com/zcredirect?visitid=a4ccc87d-e1e3-11e8-a8e7-064620279d32&type=js&browserWidth=1024&browserHeight=1366&iframeDetected=false
+http://redir.mobidirect.info/?utm_medium=3efe490aeabf7127f84c3a9802a6add65882b14a&utm_campaign=WW-SI-&1=3ac902b4-bbab-49c9-97ae-8290273e71a6&cid=wTT4UHNVMO25HO1IHSOF1CQI
+http://redir.mobidirect.info/?utm_term=6620790218230333545&clickverify=1&utm_content=fdc2c69a9caf9dad93939295a69697938cbbb8d7becabcbd83838285b6868783bc8ba5bfbe8fbdbe8283b1818687b485a89bdff6f1f8f0f8b2dafef2b897a6a1ead9dce9eeef989f9786e0e1d7e7d5d5c8cff8c8cdc9cafdc2c3c5c9c6c0c5c4cafbf8fdfefffefef4f3f0a0fff7fcf5eab8
+http://redir.mobidirect.info/?utm_term=6620790218230333545&clickverify=1&utm_content=fdc2c69a9caf9dad93939295a69697938cbbb8d7becabcbd83838285b6868783bc8ba5bfbe8fbdbe8283b1818687b485a89bdff6f1f8f0f8b2dafef2b897a6a1ead9dce9eeef989f9786e0e1d7e7d5d5c8cff8c8cdc9cafdc2c3c5c9c6c0c5c4cafbf8fdfefffefef4f3f0a0fff7fcf5eab8#
+https://onwardinated.com/c/5a37c8ad-f104-11e5-9f1f-0626cc8adced?pubid=stw&subid=6620790218230333545
+https://onwardinated.com/h/a5d8d9e8-e1e3-11e8-babb-0143504f067a/c/5a37c8ad-f104-11e5-9f1f-0626cc8adced/?pubid=stw&subid=6620790218230333545&_i=1&_s=a5d89c6c-e1e3-11e8-9520-0143504f065d&_r=redir.mobidirect.info&_n=&_d=7|1|-60|0|1|1|t|t|1024x1366|0|2|Google%20Inc.|1|24|24|192|74-5916198c|0|0|422|1|2|t|t|y9j1d2,qmpy4a,u|en,en-GB,sl,sl-SI|Win32|aaaa0|20030107|5.0%20(iPad;%20CPU%20OS%2011_0%20like%20Mac%20OS%20X)%20AppleWebKit/604.1.34%20(KHTML,%20like%20Gecko)%20Version/11.0%20Mobile/15A5341f%20Safari/604.1|0|8|192.168.1.18|u|t|t|t|3vty7|WebGL%201.0%20(OpenGL%20ES%202.0%20Chromium)|Google%20Inc.|ANGLE%20(NVIDIA%20GeForce%20GTX%20750%20Ti%20Direct3D11%20vs_5_0%20ps_5_0)|ex:nq6ww|1|u|t|n|n|n|n|1024x1366|0|1|0|0|1|a5d969d0-e1e3-11e8-a205-1143504f06d3|cs_rr
+https://onwardinated.com/v/a5d8d9e8-e1e3-11e8-babb-0143504f067a/c/5a37c8ad-f104-11e5-9f1f-0626cc8adced/?pubid=stw&subid=6620790218230333545&_i=1&_s=a5d89c6c-e1e3-11e8-9520-0143504f065d&_r=redir.mobidirect.info&_n=&_d=7|1|-60|0|1|1|t|t|1024x1366|0|2|Google%20Inc.|1|24|24|192|74-5916198c|0|0|422|1|2|t|t|y9j1d2,qmpy4a,u|en,en-GB,sl,sl-SI|Win32|aaaa0|20030107|5.0%20(iPad;%20CPU%20OS%2011_0%20like%20Mac%20OS%20X)%20AppleWebKit/604.1.34%20(KHTML,%20like%20Gecko)%20Version/11.0%20Mobile/15A5341f%20Safari/604.1|0|8|192.168.1.18|u|t|t|t|3vty7|WebGL%201.0%20(OpenGL%20ES%202.0%20Chromium)|Google%20Inc.|ANGLE%20(NVIDIA%20GeForce%20GTX%20750%20Ti%20Direct3D11%20vs_5_0%20ps_5_0)|ex:nq6ww|1|u|t|n|n|n|n|1024x1366|0|1|0|0|1|a5d969d0-e1e3-11e8-a205-1143504f06d3|cs_rr
+https://circultural.com/l/8c579bd6-2433-11e6-9af1-02401b02a2b5/v/a6230108-e1e3-11e8-8bce-1143c190ffc2/
+
+# 2018-11-08 (2)
+https://cdnproviders.net/?s=doYwSepFVyHA8bq4uDVpnYzB9x7PO3TmKaSL0EGXJ6O2PRzlfuOacTjtuwv5XihSOYd6CONVJXFXSshtsAmtwA%3D%3D&src=c3NsZGVjb2Rlci5vcmc%3D
+http://foxcasino8.com/
+http://use.photios-raj.com/zcvisitor/0fb39e56-e362-11e8-b37d-0627c6752146?campaignid=b4d16a20-6739-11e8-b429-0e497388635c
+http://use.dauid-iep.com/zcredirect?visitid=0fb39e56-e362-11e8-b37d-0627c6752146&type=js&browserWidth=980&browserHeight=1568&iframeDetected=false
+http://go.net-dk32.stream/av/ova/index-si-wl.html?td=alcartone.com&cep=byb72phbwI_wm0Hnt5eq1erP0sw0xczxTgEyl6662NJuWK9l5aF6CyEHRAsGN5mv3-WKFp_Wkpe0uQl36eJxdD1xSz_lmei7LUOVgQZTipmMTIR_9noLnpJhYVIdEesnAMKl8CA3kUG3yDSpsbJSZZt0kQty2f03kFZKRC2_TPrpmkZqkZQTYdGd_S583kfFQjmoLWzVBKyukTYfDATUSspML1C1Z52gtyF-6KbjMpQz0DNVtwKlVCrUBB8LTuG06jy79tDWZIUxSKggh4qUNiycW1ISSVAuzwPEvdzrm3Cq0MfcI2D8AN5uvakoWkReEHfNedFHwCQUzGMuwwLz0L2cc-qwQdjnlnU4i5piU_jtC4DDd156QzlRbF-5AoQ-WGyocSs6qb1hGfFtVtJNP17_eIZYbLCInz96tjOzYjSVcptvhvZdMbjdLzw6zYW9yNnKWf_MNXEG5q8jOR7y_Q
+http://go.net-dk32.stream/av/ova/index-si-wl.html?td=alcartone.com&cep=byb72phbwI_wm0Hnt5eq1erP0sw0xczxTgEyl6662NJuWK9l5aF6CyEHRAsGN5mv3-WKFp_Wkpe0uQl36eJxdD1xSz_lmei7LUOVgQZTipmMTIR_9noLnpJhYVIdEesnAMKl8CA3kUG3yDSpsbJSZZt0kQty2f03kFZKRC2_TPrpmkZqkZQTYdGd_S583kfFQjmoLWzVBKyukTYfDATUSspML1C1Z52gtyF-6KbjMpQz0DNVtwKlVCrUBB8LTuG06jy79tDWZIUxSKggh4qUNiycW1ISSVAuzwPEvdzrm3Cq0MfcI2D8AN5uvakoWkReEHfNedFHwCQUzGMuwwLz0L2cc-qwQdjnlnU4i5piU_jtC4DDd156QzlRbF-5AoQ-WGyocSs6qb1hGfFtVtJNP17_eIZYbLCInz96tjOzYjSVcptvhvZdMbjdLzw6zYW9yNnKWf_MNXEG5q8jOR7y_Q#
+http://go.net-dk32.stream/av/ova/index-si-wl.html?td=alcartone.com&cep=byb72phbwI_wm0Hnt5eq1erP0sw0xczxTgEyl6662NJuWK9l5aF6CyEHRAsGN5mv3-WKFp_Wkpe0uQl36eJxdD1xSz_lmei7LUOVgQZTipmMTIR_9noLnpJhYVIdEesnAMKl8CA3kUG3yDSpsbJSZZt0kQty2f03kFZKRC2_TPrpmkZqkZQTYdGd_S583kfFQjmoLWzVBKyukTYfDATUSspML1C1Z52gtyF-6KbjMpQz0DNVtwKlVCrUBB8LTuG06jy79tDWZIUxSKggh4qUNiycW1ISSVAuzwPEvdzrm3Cq0MfcI2D8AN5uvakoWkReEHfNedFHwCQUzGMuwwLz0L2cc-qwQdjnlnU4i5piU_jtC4DDd156QzlRbF-5AoQ-WGyocSs6qb1hGfFtVtJNP17_eIZYbLCInz96tjOzYjSVcptvhvZdMbjdLzw6zYW9yNnKWf_MNXEG5q8jOR7y_Q#i
+http://4uroffer.com/new/?service=TW9tbW94aW8%3D&country=SLO&reffid=7521bd89b59b6c7137cb007ce401b727&networkid=4201&optinfo=dOJB60KA4R2QF63I1KF3CJ04&publisher=ec2aafdf-8471-493e-bce2-d09fbacd7708
+https://p.momoxxio.com/slo/virus009/?cpid=4201_dOJB60KA4R2QF63I1KF3CJ04&publisher=ec2aafdf-8471-493e-bce2-d09fbacd7708
+https://p.momoxxio.com/slo/virus009/#/!
+
+# 2018-11-12
+http://game7919.srvrize8.live/?utm_medium=oxxGrJ1EO8rl%2flkgHhDHtdaJe%2b6y3ml38Z%2b1ZX9QaLo%3d&t=main7_6
+https://cdnproviders.net/?s=doYwSepFVyHA8bq4uDVpnYzB9x7PO3TmXZsJf9mY5Y%2FlOEDRAsATyeUbcjrdpSuaHHbJHsliwv3gMbjxoZ%2BeEQ%3D%3D&src=c3NsZGVjb2Rlci5vcmc%3D
+http://foxcasino8.com/
+http://usd.photios-raj.com/zcvisitor/348309a0-e682-11e8-9ec3-122478c174c4?campaignid=b4d16a20-6739-11e8-b429-0e497388635c
+http://usd.dauid-iep.com/zcredirect?visitid=348309a0-e682-11e8-9ec3-122478c174c4&type=js&browserWidth=980&browserHeight=1568&iframeDetected=false
+http://visit.net-bu95.stream/av/ova/index-si-wl.html?td=alcartone.com&cep=E24r87Q-4UrXXZP7uRoeTiO17Rzd2C62cz2WmvI_p9YX453uYxj4rs8qjH8ggLYcbZhoMWSUbeUzlnOMvAEV0cQAXJxiGpRQ900e5cvC3hLoW0NvPKkIT2LBTp3XpZ7kot6ReI-xI8_WqPw3hfqelbH_3sMYq8ikSMsFkXBo70KUGa4gpn66-vFJRVF-4HRp1B692UeJgWT-tvToyofUTUuqm_B_ckzUaF4If-ExASriF7659Z-EoIEuWTyTVf8-wR_Z4N1mOwWAK_IO2H-mAlCXYi7INRTY1Tadwex5lfeEq-GiCRI3MgD7h6aw-g6ajQzaRcO3ZrxpKnLJzLDdNrKZs7TOG5tlpMGhPXcaEKFVE6H0dO57x41-qm7xcopWJwH7zuXhvlT8czTLTn0Z5pMNzyCRhpr-U8ljizzGegQ6kamQvnHorK68KDNiE98DLoC74n82HkVUuRaNYYkn6g
+http://visit.net-bu95.stream/av/ova/index-si-wl.html?td=alcartone.com&cep=E24r87Q-4UrXXZP7uRoeTiO17Rzd2C62cz2WmvI_p9YX453uYxj4rs8qjH8ggLYcbZhoMWSUbeUzlnOMvAEV0cQAXJxiGpRQ900e5cvC3hLoW0NvPKkIT2LBTp3XpZ7kot6ReI-xI8_WqPw3hfqelbH_3sMYq8ikSMsFkXBo70KUGa4gpn66-vFJRVF-4HRp1B692UeJgWT-tvToyofUTUuqm_B_ckzUaF4If-ExASriF7659Z-EoIEuWTyTVf8-wR_Z4N1mOwWAK_IO2H-mAlCXYi7INRTY1Tadwex5lfeEq-GiCRI3MgD7h6aw-g6ajQzaRcO3ZrxpKnLJzLDdNrKZs7TOG5tlpMGhPXcaEKFVE6H0dO57x41-qm7xcopWJwH7zuXhvlT8czTLTn0Z5pMNzyCRhpr-U8ljizzGegQ6kamQvnHorK68KDNiE98DLoC74n82HkVUuRaNYYkn6g#
+http://visit.net-bu95.stream/av/ova/index-si-wl.html?td=alcartone.com&cep=E24r87Q-4UrXXZP7uRoeTiO17Rzd2C62cz2WmvI_p9YX453uYxj4rs8qjH8ggLYcbZhoMWSUbeUzlnOMvAEV0cQAXJxiGpRQ900e5cvC3hLoW0NvPKkIT2LBTp3XpZ7kot6ReI-xI8_WqPw3hfqelbH_3sMYq8ikSMsFkXBo70KUGa4gpn66-vFJRVF-4HRp1B692UeJgWT-tvToyofUTUuqm_B_ckzUaF4If-ExASriF7659Z-EoIEuWTyTVf8-wR_Z4N1mOwWAK_IO2H-mAlCXYi7INRTY1Tadwex5lfeEq-GiCRI3MgD7h6aw-g6ajQzaRcO3ZrxpKnLJzLDdNrKZs7TOG5tlpMGhPXcaEKFVE6H0dO57x41-qm7xcopWJwH7zuXhvlT8czTLTn0Z5pMNzyCRhpr-U8ljizzGegQ6kamQvnHorK68KDNiE98DLoC74n82HkVUuRaNYYkn6g#i
+http://realcenter-mobileapps1.com/away.php
+https://check-out-deal.org/page?cam=10571&country=si&pub=110&r=3-bfkobbhi2fscch1hk860&a=3421
+http://click.whatthetrack.com/?utm_medium=6f4b6021174ab01d3b75d78179f6945f193e152a&utm_campaign=Exit-Mainstream
+http://4uroffer.com/new/?service=TW9tbW94aW8%3D&country=SLO&reffid=7521bd89b59b6c7137cb007ce401b727&networkid=4201&optinfo=dOGTFPF43VLQD56IHMLI4M4O&publisher=ec2aafdf-8471-493e-bce2-d09fbacd7708
+http://click.whatthetrack.com/?utm_term=6622971885506265460&clickverify=1&utm_content=fdc2c69a9caf9dad9a9390a197959c95babbd6b9cbbfbc858283b080848f84b5a7bdb889bfbc8c8db3838081b687b685ddf4f7fef2fabcd4fcf0be91a4a394a7deebe8e9888e809e87e3e0d0e6dfd4d5facacac1ceffcccdc7cbc0c6c7c6f4c5fafff8f9fcfcfafdf2a2f9f1fef7f4d8
+http://click.whatthetrack.com/?utm_term=6622971885506265460&clickverify=1&utm_content=fdc2c69a9caf9dad9a9390a197959c95babbd6b9cbbfbc858283b080848f84b5a7bdb889bfbc8c8db3838081b687b685ddf4f7fef2fabcd4fcf0be91a4a394a7deebe8e9888e809e87e3e0d0e6dfd4d5facacac1ceffcccdc7cbc0c6c7c6f4c5fafff8f9fcfcfafdf2a2f9f1fef7f4d8#
+https://onwardinated.com/c/5a37c8ad-f104-11e5-9f1f-0626cc8adced?pubid=stw&subid=6622971885506265460
+https://p.momoxxio.com/slo/virus009/?cpid=4201_dOGTFPF43VLQD56IHMLI4M4O&publisher=ec2aafdf-8471-493e-bce2-d09fbacd7708
+https://p.momoxxio.com/slo/virus009/#/!
+https://onwardinated.com/h/54ff43e2-e682-11e8-9fba-01443012d910/c/5a37c8ad-f104-11e5-9f1f-0626cc8adced/?pubid=stw&subid=6622971885506265460&_i=1&_s=54ff0cc4-e682-11e8-bfc5-01443012d98c&_r=click.whatthetrack.com&_n=&_d=7|1|-60|0|1|1|t|t|800x1280|0|2|Google%20Inc.|1|24|24|192|74-5916198c|0|0|536|0|2|t|t|y9j1d2,qmpy4a,u|en,en-GB,sl,sl-SI|Win32|aaaa0|20030107|5.0%20(Linux;%20Android%206.0.1;%20Nexus%2010%20Build/MOB31T)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/69.0.3452.0%20Safari/537.36|0|8|192.168.1.18|u|t|t|t|3vty7|WebGL%201.0%20(OpenGL%20ES%202.0%20Chromium)|Google%20Inc.|ANGLE%20(NVIDIA%20GeForce%20GTX%20750%20Ti%20Direct3D11%20vs_5_0%20ps_5_0)|ex:nq6ww|1|u|t|n|n|n|n|980x1568|0|1|0|0|1|54ff62c8-e682-11e8-bec5-11443012d9d1|cs_rr
+https://onwardinated.com/v/54ff43e2-e682-11e8-9fba-01443012d910/c/5a37c8ad-f104-11e5-9f1f-0626cc8adced/?pubid=stw&subid=6622971885506265460&_i=1&_s=54ff0cc4-e682-11e8-bfc5-01443012d98c&_r=click.whatthetrack.com&_n=&_d=7|1|-60|0|1|1|t|t|800x1280|0|2|Google%20Inc.|1|24|24|192|74-5916198c|0|0|536|0|2|t|t|y9j1d2,qmpy4a,u|en,en-GB,sl,sl-SI|Win32|aaaa0|20030107|5.0%20(Linux;%20Android%206.0.1;%20Nexus%2010%20Build/MOB31T)%20AppleWebKit/537.36%20(KHTML,%20like%20Gecko)%20Chrome/69.0.3452.0%20Safari/537.36|0|8|192.168.1.18|u|t|t|t|3vty7|WebGL%201.0%20(OpenGL%20ES%202.0%20Chromium)|Google%20Inc.|ANGLE%20(NVIDIA%20GeForce%20GTX%20750%20Ti%20Direct3D11%20vs_5_0%20ps_5_0)|ex:nq6ww|1|u|t|n|n|n|n|980x1568|0|1|0|0|1|54ff62c8-e682-11e8-bec5-11443012d9d1|cs_rr
+https://circultural.com/l/8c579bd6-2433-11e6-9af1-02401b02a2b5/v/55580fcc-e682-11e8-94f4-1143b328e90f/
+http://offers.monthlywinners.com/lander/si/sivred1/?ept2=ac96de7a-621c-438f-8306-9c88316ea0e2
+http://offers.monthlywinners.com/lander/si/sivred1/?ept2=ac96de7a-621c-438f-8306-9c88316ea0e2#
+https://play.clicksaints.com/lpx/tdWzKDJAIN?aff=bcs-svplt&reqid=3-bfkoc3k8gq3scgbd15f0&oid=205&s1=6308|3&s2=5be9860ef1ce7e000136e225
+
+# 2018-11-16
+http://prize7533.crvrize13.live/?utm_medium=oxxGrJ1EO8rl%2flkgHhDHtdaJe%2b6y3ml38Z%2b1ZX9QaLo%3d&t=main7_6
+http://realcenter-mobileapps1.com/?url=I4WHKFughjL89I2Td%2bZ6QZ9PpkgrqzQ5tHqkSLsAZPYDvCIeEkPF5cXZtgxX6WzgnbTqpzPrYiB%2fusH80VkT846hd2RleXlZIKhan5seaWEM8EpQyJjHjQUiiL%2bEaF4hw3AQPGfsKAsiQl8j2uOLQw%3d%3d
+https://cdnproviders.net/?s=doYwSepFVyHA8bq4uDVpnYzB9x7PO3TmxIklDdrnP1yzhjfgva4btukBgDiQo3JTWjD7zNYpxLwTx3p3QzRz3A%3D%3D&src=c3NsZGVjb2Rlci5vcmc%3D
+
+# 2018-11-20
+http://prize2421.mzdrize46.live/?utm_medium=oxxGrJ1EO8rl%2flkgHhDHtdaJe%2b6y3ml38Z%2b1ZX9QaLo%3d&t=main7_6
+
+# 2018-12-14
+http://game0218.repteam56.live/4053524835/?u=gmqk605&o=55hppzy&t=main7&f=1
+http://game0218.repteam56.live/4053524835/
+http://game0218.repteam56.live/4053524834/
+http://game0218.repteam56.live/4053554834/
+http://game0218.repteam56.live/
+http://game0218.repteam56.live/1/
+
+# 2019-02-19
+http://best7798.something-wrong11.life/?utm_campaign=oxxGrJ1EO8rl_lkgHhDHtdaJe-6y3ml38Z-1ZX9QaLo1&t=main9_2dff016b6b6ed4
+
+# 2019-03-05
+http://competition7179.funproxyservers17.icu/0140026186/?t=main9_2dff016b6b6ed4&u=d29pte4&o=vxzkpbg&f=1
+http://realcenter-mobileapps2.com/away.php
+https://get-the-best-cool-deal.com/page?cam=10571&country=si&pub=110&r=16896-300892032&a=3421
+
+# 2019-03-09
+http://reward7119.hotmoneyfucklife14.live/6038861451/?t=main9_2dff016b6b6ed4&u=d29pte4&o=vxzkpbg&f=1
+http://realcenter-mobileapps2.com/away.php
+https://get-the-best-cool-deal.com/page?cam=10571&country=si&pub=110&r=16896-302145706&a=3421
+
+# 2019-03-11
+http://reward3827.easysearch28.agency/4462286772/?t=main9_2dff016b6b6ed4&u=d29pte4&o=vxzkpbg&f=1
+
+# 2019-03-20
+http://prize3371.bigbigabum38.icu/2222314774/?t=main9_2dff016b6b6ed4&u=d29pte4&o=vxzkpbg&f=1
+
+# 2019-03-26
+http://sweeps7896.sadman36.live/0633440020/?t=main9_2dff016b6b6ed4&u=d29pte4&o=vxzkpbg&f=1
+
+# 2019-03-31
+http://apps6436.trueredirect97.icu/8802875343/?t=main9_2dff016b6b6ed4&u=d29pte4&o=vxzkpbg&f=1
+
+# 2019-04-07
+http://play9403.bigbughere3.icu/3381138045/?t=main9_2dff016b6b6ed4&u=d29pte4&o=vxzkpbg&f=1
+
+# 2019-08-17
+https://ladsblue.com/rubpf4qr?key=356544da9066c05a7f4a580d11b93717
+https://ladsblue.com/rubpf4qr?key=0f22c1fd609f13cb7947c8cabfe1a90d&psid=14961610
+https://youtubee.net/land3.php?cnv_id=606b6fnho9rm7ble61&placementid=6234&bv=69&uclick=fnho9rm7bl
+https://youtubee.net/land3.php?cnv_id=f5774fnho9rkt8n5f6&placementid=6234&bv=69&uclick=fnho9rkt8n
+https://bestdateshere-for23.com/?u=7pfk605&o=e9ym176&t=14961610adster_tablet
+http://game2298.falseortruerdr3.life/7161650226/?u=zqq8hw0&o=td5k6gk&f=1
+https://ladsblue.com/f12pi05mw?key=54c1aef48b73cd0c91a4b919be8af8c4
+https://ladsblue.com/f12pi05mw?key=0f22c1fd609f13cb7947c8cabfe1a90d&psid=14952720
+https://bestdateshere-for23.com/?u=7pfk605&o=e9ym176&t=14952720adster_mobile
+
+# 2019-08-17
+https://ladsblue.com/rubpf4qr?key=356544da9066c05a7f4a580d11b93717
+https://ladsblue.com/rubpf4qr?key=0f22c1fd609f13cb7947c8cabfe1a90d&psid=14961610https://youtubee.net/land3.php?cnv_id=367a2fnhomyzw013b&placementid=6234&bv=69&uclick=fnhomyzw0
+https://youtubee.net/land3.php?cnv_id=0ee6cfnhomy1m6o43c&placementid=6234&bv=69&uclick=fnhomy1m6o
+https://bestdateshere-for23.com/?u=7pfk605&o=e9ym176&t=14961610adster_tablet
+https://bestdateshere-for23.com/?u=7pfk605&o=e9ym176&t=14961610adster_mobile
+http://game2298.falseortruerdr3.life/1613036120/?u=zqq8hw0&o=td5k6gk&f=1
+https://youtubee.net/land3.php?cnv_id=a58d9fnhouqa6fe903&placementid=6234&bv=69&uclick=fnhouqa6fe
+https://youtubee.net/land3.php?cnv_id=97c2dfnhouqa93y03a&placementid=6234&bv=69&uclick=fnhouqa93y
+https://ladsblue.com/f12pi05mw?key=54c1aef48b73cd0c91a4b919be8af8c4
+https://ladsblue.com/f12pi05mw?key=0f22c1fd609f13cb7947c8cabfe1a90d&psid=14952720
+https://bestdateshere-for23.com/?u=7pfk605&o=e9ym176&t=14952720adster_mobile
+https://youtubee.net/land3.php?cnv_id=f2cc2fnhouqd58n1ed&placementid=6234&bv=69&uclick=fnhouqd58n
+https://youtubee.net/land3.php?cnv_id=1bba4fnhouqejwj05d&placementid=6234&bv=69&uclick=fnhouqejwj
+
+# 2019-08-19
+http://game9752.checkingforward68.life/6720674152/?u=zqq8hw0&o=td5k6gk&f=1
+http://game9752.checkingforward68.life/6842222604/?u=zqq8hw0&o=td5k6gk&f=1
+http://game9752.checkingforward68.life/4265175047/?u=zqq8hw0&o=td5k6gk&f=1
+
+# 2019-09-04
+http://app5808.temporaryserverhere65.life/0780684268/?u=zqq8hw0&o=td5k6gk&f=1
+http://app5808.temporaryserverhere65.life/3247424304/?u=zqq8hw0&o=td5k6gk&f=1
+
+# 2019-09-04
+https://ladsblue.com/rubpf4qr?key=356544da9066c05a7f4a580d11b93717
+https://ladsblue.com/rubpf4qr?key=0f22c1fd609f13cb7947c8cabfe1a90d&psid=14961610https://leadnote.me/video-4?h=waWQiOjEwMDA1MDYsInNpZCI6MTAxMjcyOSwid2lkIjozODcxMiwic3JjIjoyfQ==eyJ&click_id=40c0788db94a50004c770364d66605aa
+https://leadnote.me/video-4?h=waWQiOjEwMDA1MDYsInNpZCI6MTAxMjcyOSwid2lkIjozODcxMiwic3JjIjoyfQ==eyJ&click_id=95b4ee0742ef15c6ac98500322ecc027
+https://bestdateshere-for23.com/?u=7pfk605&o=e9ym176&t=14961610adster_tablet
+
+# 2019-09-06
+http://play0000.temporaryserverhere46.live/0677686285/?u=zqq8hw0&o=td5k6gk&f=1
+http://play0000.temporaryserverhere46.live/1841100178/?u=zqq8hw0&o=td5k6gk&f=1
+http://realcenter-mobileapps2.com/away.php
+https://si.mundome.com/lp/8453/?af=1972&af_code=102d3cb8480df742bd131ab74bfc06&af_e=1060&source=afp
+https://si.mundome.com/lp/8453/#/!
+https://ladsblue.com/f12pi05mw?key=54c1aef48b73cd0c91a4b919be8af8c4
+https://ladsblue.com/f12pi05mw?key=0f22c1fd609f13cb7947c8cabfe1a90d&psid=14952720
+https://totogaming.com/Promotion/en/freebet5.html?utm_source=Widgwtmedia_Slovenia&utm_medium=freebet5&utm_campaign=FreebetBonus
+
+# 2019-09-15
+https://ladsblue.com/rubpf4qr?key=356544da9066c05a7f4a580d11b93717
+https://ladsblue.com/rubpf4qr?key=0f22c1fd609f13cb7947c8cabfe1a90d&psid=14961610
+https://mobilegogle.com/AVA/SI/4SI-f/?c=btzaka3zi8z1&k=75a28b04e1c0ff1ed1a81cfd17399b1d&city=&brand=Samsung&model=SM-G900P&isp=Telekom%20Slovenije%20d.d.&osv=5.0&os=Android
+https://mobilegogle.com/AVA/SI/4SI-f/?c=btzaka6zi8z1&k=a6e7fd537f4ddad37c69f2e16fde2427&city=&brand=Samsung&model=SM-G900P&isp=Telekom%20Slovenije%20d.d.&osv=5.0&os=Android
+https://mobilegogle.com/AVA/SI/4SI-f/?c=btzaka3zi8z1&k=75a28b04e1c0ff1ed1a81cfd17399b1d&city=&brand=Samsung&model=SM-G900P&isp=Telekom%20Slovenije%20d.d.&osv=5.0&os=Android#
+http://artpixelk.com/jump/jumpto.php?u=https%3A%2F%2Fto.searchredirectt.com%2Fclick%3Fpid%3D175%26offer_id%3D2457%26sub1%3D19%26sub5%3Dbtzaka3%26
+http://go.trackiteazy.com/main/d.php?s=1&link=https%3A%2F%2Fp.momoxxio.com%2Fslo%2Fantivrs023%2F%3Fsubid%3DqmEZhjYSaq-5d7e3d96e4c61b20f21b52ce%26networkid%3D102172%26publisher%3D175%26ept2%3D945234d4-a87d-492f-adbe-f44ec7d4714f
+https://p.momoxxio.com/slo/antivrs023/?subid=qmEZhjYSaq-5d7e3d96e4c61b20f21b52ce&networkid=102172&publisher=175&ept2=945234d4-a87d-492f-adbe-f44ec7d4714f
+https://p.momoxxio.com/slo/antivrs023/#/!
+http://apps2170.punksgotoserver36.live/5456401841/?u=zqq8hw0&o=td5k6gk&f=1
+https://ladsblue.com/f12pi05mw?key=54c1aef48b73cd0c91a4b919be8af8c4
+https://ladsblue.com/f12pi05mw?key=0f22c1fd609f13cb7947c8cabfe1a90d&psid=14952720
+https://worldvictory.zone/si/2i/telekom/?key=eyJ0aW1lc3RhbXAiOiIxNTY4NTU0Mzk5IiwiaGFzaCI6IjgzZWJmMjFlNGVkNzBmMWYxNDhkMzAxNTY0MTZjOTI5MGE0YmMwMTgifQ%3D%3D&bemobdata=c%3D87425c80-8524-4d44-b9b0-93bad2b1d5d0..a%3D1..b%3D0..e%3Dc0a0bec4519361cf3b467e281c59f4f4..c1%3D14952720..c2%3Dc0a0bec4519361cf3b467e281c59f4f4..r%3Dhttps%253A%252F%252Fladsblue.com%252Ff12pi05mw%253Fkey%253D0f22c1fd609f13cb7947c8cabfe1a90d%2526psid%253D14952720
+https://worldvictory.zone/si/2i/telekom/?key=eyJ0aW1lc3RhbXAiOiIxNTY4NTU0Mzk5IiwiaGFzaCI6IjgzZWJmMjFlNGVkNzBmMWYxNDhkMzAxNTY0MTZjOTI5MGE0YmMwMTgifQ%3D%3D&bemobdata=c%3D87425c80-8524-4d44-b9b0-93bad2b1d5d0..a%3D1..b%3D0..e%3Dc0a0bec4519361cf3b467e281c59f4f4..c1%3D14952720..c2%3Dc0a0bec4519361cf3b467e281c59f4f4..r%3Dhttps%253A%252F%252Fladsblue.com%252Ff12pi05mw%253Fkey%253D0f22c1fd609f13cb7947c8cabfe1a90d%2526psid%253D14952720#
+https://mobilegogle.com/AVA/SI/4SI-f/?c=btzaka6zi8z1&k=a6e7fd537f4ddad37c69f2e16fde2427&city=&brand=Samsung&model=SM-G900P&isp=Telekom%20Slovenije%20d.d.&osv=5.0&os=Android#
+http://artpixelk.com/jump/jumpto.php?u=https%3A%2F%2Fto.searchredirectt.com%2Fclick%3Fpid%3D175%26offer_id%3D2457%26sub1%3D19%26sub5%3Dbtzaka6%26
+http://go.trackiteazy.com/main/d.php?s=1&link=https%3A%2F%2Fp.momoxxio.com%2Fslo%2Fantivrs023%2F%3Fsubid%3DqmEZhjYSaq-5d7e3da2e4c61b621b70d994%26networkid%3D102172%26publisher%3D175%26ept2%3D87022b29-cdd1-4b25-af7b-fa22acfe2ef2
+https://p.momoxxio.com/slo/antivrs023/?subid=qmEZhjYSaq-5d7e3da2e4c61b621b70d994&networkid=102172&publisher=175&ept2=87022b29-cdd1-4b25-af7b-fa22acfe2ef2
+https://worldvictory.zone/si/2i/telekom/?key=eyJ0aW1lc3RhbXAiOiIxNTY4NTU0NDAzIiwiaGFzaCI6ImNiY2Q5ODU1MTljMjNmOWIxZDVkZjFmN2U3NDI4MjQyYTdkNWRhYjQifQ%3D%3D&bemobdata=c%3D87425c80-8524-4d44-b9b0-93bad2b1d5d0..a%3D1..b%3D0..e%3D0e6076b094cbff83001f6441ec27b7e0..c1%3D14961610..c2%3D0e6076b094cbff83001f6441ec27b7e0..r%3Dhttps%253A%252F%252Fladsblue.com%252Frubpf4qr%253Fkey%253D0f22c1fd609f13cb7947c8cabfe1a90d%2526psid%253D14961610
+https://worldvictory.zone/si/2i/telekom/?key=eyJ0aW1lc3RhbXAiOiIxNTY4NTU0NDAzIiwiaGFzaCI6ImNiY2Q5ODU1MTljMjNmOWIxZDVkZjFmN2U3NDI4MjQyYTdkNWRhYjQifQ%3D%3D&bemobdata=c%3D87425c80-8524-4d44-b9b0-93bad2b1d5d0..a%3D1..b%3D0..e%3D0e6076b094cbff83001f6441ec27b7e0..c1%3D14961610..c2%3D0e6076b094cbff83001f6441ec27b7e0..r%3Dhttps%253A%252F%252Fladsblue.com%252Frubpf4qr%253Fkey%253D0f22c1fd609f13cb7947c8cabfe1a90d%2526psid%253D14961610#
+
+# 2019-09-17
+https://ladsblue.com/f12pi05mw?key=54c1aef48b73cd0c91a4b919be8af8c4
+https://ladsblue.com/f12pi05mw?key=0f22c1fd609f13cb7947c8cabfe1a90d&psid=14952720
+https://mobilegogle.com/AVA/SI/4SI-f/?c=btzanpbzi8z1&k=6201d66bf4104479fbef5bf74b257164&city=&brand=Samsung&model=SM-G900P&isp=Telekom%20Slovenije%20d.d.&osv=5.0&os=Android
+http://play4486.pingtopingsrv35.life/2445626034/?u=zqq8hw0&o=td5k6gk&f=1
+https://mobilegogle.com/AVA/SI/4SI-f/?c=btzanpbzi8z1&k=6201d66bf4104479fbef5bf74b257164&city=&brand=Samsung&model=SM-G900P&isp=Telekom%20Slovenije%20d.d.&osv=5.0&os=Android#
+http://artpixelk.com/jump/jumpto.php?u=https%3A%2F%2Fcpa.afffarm.com%2Fclick%3Fpid%3D799%26offer_id%3D39828%26sub1%3Dbtzanpb%26sub5%3D19%26
+https://play.vista-fun.net/lpx/u51pqGNq1B?aff=fm-762c9bc4-5e2d-4f66-aef6-273510fbc36c&reqid=w19bqm3ghtjlfodp14vjvmd0&oid=78e82e83-f3e6-454f-874a-110f31874dff&affid=762c9bc4-5e2d-4f66-aef6-273510fbc36c&s1=19&wv=1
+https://play.vista-fun.net/lpx/u51pqGNq1B#/!
+https://worldvictory.vip/si/2i/telekom/?key=eyJ0aW1lc3RhbXAiOiIxNTY4NzA5ODMxIiwiaGFzaCI6ImI4Zjc0MWExMzNlYzU4ZjQ2YTdjODA0YTUzNDBlYWRjNzM2OGQxNGYifQ%3D%3D&bemobdata=c%3D87425c80-8524-4d44-b9b0-93bad2b1d5d0..a%3D1..b%3D0..e%3D139c58cc6fb802e74a523d1fe08a736a..c1%3D14952720..c2%3D139c58cc6fb802e74a523d1fe08a736a..r%3Dhttps%253A%252F%252Fladsblue.com%252Ff12pi05mw%253Fkey%253D0f22c1fd609f13cb7947c8cabfe1a90d%2526psid%253D14952720
+https://worldvictory.vip/si/2i/telekom/?key=eyJ0aW1lc3RhbXAiOiIxNTY4NzA5ODMxIiwiaGFzaCI6ImI4Zjc0MWExMzNlYzU4ZjQ2YTdjODA0YTUzNDBlYWRjNzM2OGQxNGYifQ%3D%3D&bemobdata=c%3D87425c80-8524-4d44-b9b0-93bad2b1d5d0..a%3D1..b%3D0..e%3D139c58cc6fb802e74a523d1fe08a736a..c1%3D14952720..c2%3D139c58cc6fb802e74a523d1fe08a736a..r%3Dhttps%253A%252F%252Fladsblue.com%252Ff12pi05mw%253Fkey%253D0f22c1fd609f13cb7947c8cabfe1a90d%2526psid%253D14952720#
+http://play4486.pingtopingsrv35.life/5417312236/?u=zqq8hw0&o=td5k6gk&f=1
+
+# 2019-09-18
+https://ladsblue.com/f12pi05mw?key=54c1aef48b73cd0c91a4b919be8af8c4
+https://ladsblue.com/f12pi05mw?key=0f22c1fd609f13cb7947c8cabfe1a90d&psid=14952720
+https://mobilegogle.com/AVA/SI/4SI-f/?c=btzapobzi8z1&k=99222c3d6a74ee6203747911a936437e&city=&brand=Samsung&model=SM-G900P&isp=Telekom%20Slovenije%20d.d.&osv=5.0&os=Android
+http://sweeps9640.pingawaysrv244.life/0758204741/?u=zqq8hw0&o=td5k6gk&f=1
+https://mobilegogle.com/AVA/SI/4SI-f/?c=btzapobzi8z1&k=99222c3d6a74ee6203747911a936437e&city=&brand=Samsung&model=SM-G900P&isp=Telekom%20Slovenije%20d.d.&osv=5.0&os=Android#
+http://artpixelk.com/jump/jumpto.php?u=https%3A%2F%2Fcpadstrtmd.mobisway.com%2Fclick%3Fpid%3D799%26offer_id%3D38046%26sub1%3Dbtzapob%26sub5%3D19%26
+https://join.appiq.mobi/lpx/mYUkJ2LX2j?aff=fm-762c9bc4-5e2d-4f66-aef6-273510fbc36c&reqid=wmqdtbgbe82l5mephva2pdem&oid=6f20bcb9-b1e9-48fb-a62a-86582bd94f5c&affid=762c9bc4-5e2d-4f66-aef6-273510fbc36c&s1=19&wv=1
+https://join.appiq.mobi/lpx/mYUkJ2LX2j#/!
+http://sweeps9640.pingawaysrv244.life/2275574213/?u=zqq8hw0&o=td5k6gk&f=1
+https://worldvictory.vip/si/2i/telekom/?key=eyJ0aW1lc3RhbXAiOiIxNTY4ODE4NTE4IiwiaGFzaCI6Ijg2YTk1NzFhMDlhMjEzZWY0Mjc1YTVlMTAxMjhmMzQxN2QzZjU4ZmEifQ%3D%3D&bemobdata=c%3D87425c80-8524-4d44-b9b0-93bad2b1d5d0..a%3D1..b%3D0..e%3D07b5c9978c46674fa08787fd6e3e70f2..c1%3D14952720..c2%3D07b5c9978c46674fa08787fd6e3e70f2..r%3Dhttps%253A%252F%252Fladsblue.com%252Ff12pi05mw%253Fkey%253D0f22c1fd609f13cb7947c8cabfe1a90d%2526psid%253D14952720
+https://worldvictory.vip/si/2i/telekom/?key=eyJ0aW1lc3RhbXAiOiIxNTY4ODE4NTE4IiwiaGFzaCI6Ijg2YTk1NzFhMDlhMjEzZWY0Mjc1YTVlMTAxMjhmMzQxN2QzZjU4ZmEifQ%3D%3D&bemobdata=c%3D87425c80-8524-4d44-b9b0-93bad2b1d5d0..a%3D1..b%3D0..e%3D07b5c9978c46674fa08787fd6e3e70f2..c1%3D14952720..c2%3D07b5c9978c46674fa08787fd6e3e70f2..r%3Dhttps%253A%252F%252Fladsblue.com%252Ff12pi05mw%253Fkey%253D0f22c1fd609f13cb7947c8cabfe1a90d%2526psid%253D14952720#
+https://ladsblue.com/rubpf4qr?key=356544da9066c05a7f4a580d11b93717
+https://ladsblue.com/rubpf4qr?key=0f22c1fd609f13cb7947c8cabfe1a90d&psid=14961610
+https://worldvictory.vip/si/2i/telekom/?key=eyJ0aW1lc3RhbXAiOiIxNTY4ODE4NTI0IiwiaGFzaCI6IjEyYmFhOGNhMjEzZDE2OWU0MDlhMWYxMThjNjBhZDhiZTdhYTRjNTEifQ%3D%3D&bemobdata=c%3D87425c80-8524-4d44-b9b0-93bad2b1d5d0..a%3D1..b%3D0..e%3D5d016a5b8130cd82c8fa3c3bb9801428..c1%3D14961610..c2%3D5d016a5b8130cd82c8fa3c3bb9801428..r%3Dhttps%253A%252F%252Fladsblue.com%252Frubpf4qr%253Fkey%253D0f22c1fd609f13cb7947c8cabfe1a90d%2526psid%253D14961610
+https://worldvictory.vip/si/2i/telekom/?key=eyJ0aW1lc3RhbXAiOiIxNTY4ODE4NTI0IiwiaGFzaCI6IjEyYmFhOGNhMjEzZDE2OWU0MDlhMWYxMThjNjBhZDhiZTdhYTRjNTEifQ%3D%3D&bemobdata=c%3D87425c80-8524-4d44-b9b0-93bad2b1d5d0..a%3D1..b%3D0..e%3D5d016a5b8130cd82c8fa3c3bb9801428..c1%3D14961610..c2%3D5d016a5b8130cd82c8fa3c3bb9801428..r%3Dhttps%253A%252F%252Fladsblue.com%252Frubpf4qr%253Fkey%253D0f22c1fd609f13cb7947c8cabfe1a90d%2526psid%253D14961610#
+
+# 2019-09-24
+https://ladsblue.com/f12pi05mw?key=54c1aef48b73cd0c91a4b919be8af8c4
+https://ladsblue.com/f12pi05mw?key=0f22c1fd609f13cb7947c8cabfe1a90d&psid=14952720
+https://phonotyper.com/?s=110128&p=90&cid=3165690220863268967
+https://clclo.pro/b/c/c/redir/1?sid=OjQNhvtUvntfySJg
+https://viber.gr-update.online/SL_ORGL/1.htm?cep=dc3r0QqCLbGQIKi3f6BDuWFbQuzfu9fNAmllTM-xE-m-55b0fpHS8Vr6z-mN-SG1FjQM9iY8-ldr4RuMyc6pRiSl4_9xLyzTvkVuibUgQ6DPVr6nDOVbJBEYJF_wTcViiyTlw8JJ_eh4wA0TR1OgS0y0vzTe61j_ppDAuuvrJ2MyV1_l9WqDeH3xdPE2CkIp72fj7aR7thBauhy379HENqaCKut9n4KYDt34cVrljaKSJfgF1-jn1XXvJ7NAVTh4sR0ke5xAKbhJw8JEnsqWRUb8V4FRtGknboORlwsNIbPWpiysctwmSHzHyl_wWaDlxQ-XZSKlDruq8ncucY_vPVy4YwYu4rSnnhTButt06eATdIP2zdwh7Ra9scB9vR5Y9mfaXc4uaFGpUhzYRN4GtvB8CK02HVYU4NvqnWMSZy7hrqMH1m5nRVbRsZpVGOWR&lptoken=1568690433dc55ed688e&SOURCE_ID=s162_66627635056&CAMPAIGN_ID=240486&CPC=0.0200&CLICKID=s_1164735535801190006_162
+https://viber.gr-update.online/SL_ORGL/1.htm?cep=dc3r0QqCLbGQIKi3f6BDuWFbQuzfu9fNAmllTM-xE-m-55b0fpHS8Vr6z-mN-SG1FjQM9iY8-ldr4RuMyc6pRiSl4_9xLyzTvkVuibUgQ6DPVr6nDOVbJBEYJF_wTcViiyTlw8JJ_eh4wA0TR1OgS0y0vzTe61j_ppDAuuvrJ2MyV1_l9WqDeH3xdPE2CkIp72fj7aR7thBauhy379HENqaCKut9n4KYDt34cVrljaKSJfgF1-jn1XXvJ7NAVTh4sR0ke5xAKbhJw8JEnsqWRUb8V4FRtGknboORlwsNIbPWpiysctwmSHzHyl_wWaDlxQ-XZSKlDruq8ncucY_vPVy4YwYu4rSnnhTButt06eATdIP2zdwh7Ra9scB9vR5Y9mfaXc4uaFGpUhzYRN4GtvB8CK02HVYU4NvqnWMSZy7hrqMH1m5nRVbRsZpVGOWR&lptoken=1568690433dc55ed688e&SOURCE_ID=s162_66627635056&CAMPAIGN_ID=240486&CPC=0.0200&CLICKID=s_1164735535801190006_162#
+http://reward3753.zumusrv55.life/6107353828/?u=zqq8hw0&o=td5k6gk&t=main&f=1
+https://weledying-jessed.com/click
+https://weledying-jessed.com/redirect?target=BASE64aHR0cDovL3NlY3VyZWNza2Nvbm5lY3Rpb24uY29tLz9hPTIxNyZvYz0xMjYyJmM9OTIxJm09MyZzMj1kNHRhdGVlYjFtcmNuNmpwMWVwNm8yODAmczE9OWViNTJjZjQtYmM5MS00MWZkLWIwYmMtZmIzM2RiMzgyMGE4&ts=1569333773421&hash=JGCI7yN8MZyK40-b5dEdZmMMsrGh78AfMsXGkAepS50&rm=D
+http://reward3753.zumusrv55.life/3387060146/?u=zqq8hw0&o=td5k6gk&t=main&f=1
+https://play.clicksaints.com/lpx/jlReG5AHaJ?aff=bcs-mpldii&reqid=66527592&oid=903&s1=9013|9eb52cf4-bc91-41fd-b0bc-fb33db3820a8&s2=d4tateeb1mrcn6jp1ep6o280&s3=
+https://play.clicksaints.com/lpx/jlReG5AHaJ#/!
+https://ladsblue.com/rubpf4qr?key=356544da9066c05a7f4a580d11b93717
+https://ladsblue.com/rubpf4qr?key=0f22c1fd609f13cb7947c8cabfe1a90d&psid=14961610
+
+# 2019-09-28
+https://ladsblue.com/rubpf4qr?key=356544da9066c05a7f4a580d11b93717
+https://ladsblue.com/rubpf4qr?key=0f22c1fd609f13cb7947c8cabfe1a90d&psid=14961610
+https://phonotyper.com/?s=110155&p=90&cid=5954073247646896700
+https://www.mgid.com/ghits/4188431/i/47856/0/src/110155/pp/1/1?h=9BiGJzdURNeJqBRJG-Ld99E_1OtLKK3KzUUbZWMNIDPzYEppwJblCsuRvVg-rAzw&rid=a4629698-e201-11e9-ab41-d09466766346&tt=Direct&cp=153&euid=9727261023067143612
+https://mediasvideo.live/?p=ge3taylbmu5gi3bpgeytinq&sub1=16f7bxs15ydqd0ab3
+https://www.mgid.com/ghits/4188431/i/47856/0/tr/src/110155/pp/1/1/?h=9BiGJzdURNeJqBRJG-Ld99E_1OtLKK3KzUUbZWMNIDPzYEppwJblCsuRvVg-rAzw&ph=9BiGJzdURNeJqBRJG-Ld99E_1OtLKK3KzUUbZWMNIDPzYEppwJblCsuRvVg-rAzw&rid=a4629698-e201-11e9-ab41-d09466766346&trt=1&k=fciZtj2tu-Qfn~fW58aVHLfW58aXBGfVkfP%3Bf.%3BfKffefRqfZ!fk*fLZ6LbBf.%3BfQfTfaHR0cHM6Ly93d3cubWdpZC5jb20vZ2hpdHMvNDE4ODQzM%249pLzQ3ODU2LzAvc3JjLzExMDE1N%249wcC8xLzE%2FaD05QmlH%24npkVVJOZUpxQlJKRy1MZDk5RV8xT3RM%240sz%243pVVWJaV01O%24URQellFcHB3%24mJsQ3N1UnZWZy1yQXp3JnJpZD1hNDYyOTY5OC1lMjAxLTExZTktYWI0M%241kMDk0NjY3NjYzNDY%3Dfff*fP%3Bf.%3BfKfefcfT*ft!fKAfW58aVHLf!fTW96aWxsY%2481LjAgKExpbnV4OyBBbmRyb2lkIDUuMDsgU00tRzkwMFAgQnVpbGQvTFJYMjFUK%24BBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvK%24BDaHJvbWUvNjkuMC4zNDUyLjAgTW9iaWxlIFNhZmFya%2481MzcuMzY%3Dff!fV2luMzI%3DfMTIwfIft!fKAf!f!fQfIf*f*f!
+https://brainberries.co/uncategorized/11-mesmerising-beauties-of-the-past-century/
+
+# 2019-10-04
+http://app4863.fastfreeredics2.com/8781244702/?u=zqq8hw0&o=td5k6gk&t=main&f=1
+https://ladsblue.com/f12pi05mw?key=54c1aef48b73cd0c91a4b919be8af8c4
+https://ladsblue.com/f12pi05mw?key=0f22c1fd609f13cb7947c8cabfe1a90d&psid=14952720
+https://phonotyper.com/?s=288939&p=100&cid=4134635036622330727
+https://clclo.pro/b/c/c/redir/1?sid=gWptvwzQkpYyPAVt
+http://viber.gr-update.online/viber_Slov_N2/%E2%9A%A0%20Viber!.html?cep=HnlDrQSsBhYEDlEL-63GIguRRC8UdeDvFQ0QeTYtG8BB5-jOPbnoTXPDIQ8sZFSK1uwtVAL32IgMFF79oCkFMa1ug_B2IEVC4zmYpbrjU0N_wjNNcjr66pf6LGEpU1nz6a6EvoAvrvLQped3BMNjAVV3dZP3QYh1Azbf0-rOmcTM6k0t_TodIhKQGhWWElrhsY5Nza_5r334cvvDk62iDaCjFFGkhkevJAZ068lPD0gg9KQmMW1CBPjVR5-0lOUqp4ygn2foG7pTtsn-mf8z3Szk9GhmWFY_fC5t7txPnH0feRChq_AsN7soZveVpzer-WOEQGZm7QmaqPzDGfW1vxrN2fFso0MrEFENrxqujiNg-9O2yufI0TJW13493xU8lihdc3JfRIyzjE1rygChuFhM73oB25cHU6_Nds9Fz-zX04EZxYbp0jkRD7LhrI46&lptoken=155f7018202f3542045f&SOURCE_ID=s162_426782014656&CAMPAIGN_ID=240486&CPC=0.0200&CLICKID=s_2270340749226954084_162
+http://viber.gr-update.online/viber_Slov_N2/#
+https://weledying-jessed.com/click
+http://app4863.fastfreeredics2.com/7181124447/?u=zqq8hw0&o=td5k6gk&t=main&f=1
+https://weledying-jessed.com/redirect?target=BASE64aHR0cDovL3NlY3VyZWNza2Nvbm5lY3Rpb24uY29tLz9hPTIxNyZvYz0xMjYyJmM9OTIxJm09MyZzMj1kZXFqdGFsZHQydThjbnFwaGoyOWM5ZGcmczE9OWViNTJjZjQtYmM5MS00MWZkLWIwYmMtZmIzM2RiMzgyMGE4&ts=1570201711222&hash=nHwiM6US6lT2hz-TRG0S3B0QMtd9RXEEXYJ3WWMr2WE&rm=DJ
+https://play.clicksaints.com/lpx/jlReG5AHaJ?aff=bcs-mpldii&reqid=67551526&oid=903&s1=9013|9eb52cf4-bc91-41fd-b0bc-fb33db3820a8&s2=deqjtaldt2u8cnqphj29c9dg&s3=
+https://play.clicksaints.com/lpx/jlReG5AHaJ#/!
+https://ladsblue.com/rubpf4qr?key=356544da9066c05a7f4a580d11b93717
+https://ladsblue.com/rubpf4qr?key=0f22c1fd609f13cb7947c8cabfe1a90d&psid=14961610
+
+
