@@ -1,0 +1,19 @@
+! Title: break google by L33Tech
+! This jokelist blocks google apps to the point of them being white screens >_<
+
+! 1/30/2020 https://www.google.com
+www.google.com###viewport
+www.google.com###rcnt
+www.google.com###swml
+www.google.com##div.fbar:nth-of-type(2)
+www.google.com###hdtbSum
+www.google.com##.sfbgg
+www.google.com###resultStats
+www.google.com##.nojsv.sfbg
+||www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png$image
+www.google.com##.SDkEP
+www.google.com##.RNNXgb
+www.google.com###searchform
+www.google.com###slim_appbar
+www.google.com###sform
+
