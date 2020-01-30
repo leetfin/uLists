@@ -2,7 +2,7 @@
 ! Includes 0131 Block List, Adblock the NSA, ayacat's power list (I think) and more small lists.
 ! Includes: Anti APKMirror Ads and Countdown
 ! Includes: BARB/BAR 2 lists
-!Includes basic tracking Disconnect.me
+! Includes basic tracking Disconnect.me
 
 # Basic tracking list by Disconnect
 # License: GPLv3
