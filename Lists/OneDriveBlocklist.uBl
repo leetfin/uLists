@@ -37,3 +37,9 @@ substrate.office.com
 autologon.microsoftazuread-sso.com
 shared.wac.trafficmanager.net
 shared.officeapps.live.com
+data.microsoft.com/OneCollector/
+browser.events.data.microsoft.com
+onestore.ms
+/amp_analytics
+metrics
+@@.$stylesheet
