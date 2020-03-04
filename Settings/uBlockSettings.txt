@@ -1,4 +1,4 @@
-{
+{{
   "timeStamp": 1583289761516,
   "version": "1.25.0",
   "userSettings": {
