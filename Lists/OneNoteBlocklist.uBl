@@ -1,7 +1,7 @@
 ! Title: OneNote Blocklist by L33Tech
 ! Might need Decentraleyes to work
+! Updated 4-27-2020
 onenote.officeapps.live.com/o/RemoteTelemetry.ashx
-skype.com
 swx.cdn.skype.com
 poprod-a.akamaihd.net
 r1.res.office365.com
@@ -17,4 +17,9 @@ fs.microsoft.com
 azureedge.net
 microsoftonline-p.com
 /aria-web-telemetry-
-
+prod.reverseproxy-onenote.com.akadns.net
+spoprod-a.akamaihd.net.edgesuite.net
+skygfx.live.com.edgekey.net
+spoprod-a.akamaihd.net
+prod-eur.onenoteonlinesync-onenote.com.akadns.net
+.spo-msedge.net
