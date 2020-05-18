@@ -1,5 +1,5 @@
 ! Title: OneDrive Blocklist by L33Tech
-! Might need Decentraleyes to work
+! Updated 5-18-2020 2:34PM EST
 onenote.officeapps.live.com/o/RemoteTelemetry.ashx
 /o/RemoteTelemetry.ashx
 /RemoteTelemetry.ashx
@@ -34,6 +34,12 @@ browser.events.data.microsoft.com
 onestore.ms
 /amp_analytics
 metrics
-||azureedge.net^$3p
+r1.res.office365.com
+r2.res.office365.com
+r3.res.office365.com
+r4.res.office365.com
+||assets-yammer.com^$3p
+/owa.analytics.
+@@azureedge.net^$3p
 @@.$stylesheet
 @@*player*$script
