@@ -1,3 +1,3 @@
 # Blocklists
 
-The OneNote list currently breaks OneDrive. Please use the OneDrive version if you need both.
+The OneDrive blocklist supports OneDrive, OneNote, Outlook, and Microsoft Stream.
