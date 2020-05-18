@@ -5,10 +5,6 @@ onenote.officeapps.live.com/o/RemoteTelemetry.ashx
 /RemoteTelemetry.ashx
 swx.cdn.skype.com
 poprod-a.akamaihd.net
-r1.res.office365.com
-r2.res.office365.com
-r3.res.office365.com
-r4.res.office365.com
 b-ring.msedge.net
 atm-fp-direct.office.com
 ajax.aspnetcdn.com
@@ -38,5 +34,6 @@ browser.events.data.microsoft.com
 onestore.ms
 /amp_analytics
 metrics
+||azureedge.net^$3p
 @@.$stylesheet
 @@*player*$script
