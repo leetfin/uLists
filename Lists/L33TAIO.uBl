@@ -1,37 +1,52 @@
 ! Title: L33T's All-In-One Blocklist by L33Tech
 ! Includes all my lists
+! Updated 5-18-2020 2:42PM EST
 
-data.microsoft.com/OneCollector/
-browser.pipe.aria.microsoft.com
-browser.events.data.microsoft.com
-r1.res.office365.com
-r2.res.office365.com
-r3.res.office365.com
-r4.res.office365.com
-microsoftazuread-sso.com
-onestore.ms
-/amp_analytics
-metrics
-@@.$stylesheet
+directseries2.com
+
 onenote.officeapps.live.com/o/RemoteTelemetry.ashx
-skype.com
+/o/RemoteTelemetry.ashx
+/RemoteTelemetry.ashx
 swx.cdn.skype.com
-spoprod-a.akamaihd.net
 poprod-a.akamaihd.net
-r1.res.office365.com
-r2.res.office365.com
-r3.res.office365.com
-r4.res.office365.com
 b-ring.msedge.net
 atm-fp-direct.office.com
 ajax.aspnetcdn.com
 aspnetcdn.com
 browser.pipe.aria.microsoft.com
 fs.microsoft.com
-azureedge.net
 microsoftonline-p.com
 /aria-web-telemetry-
-akadns.net
+js.live.net
+akamaized.net
+akamaiedge.net
+/footprint/
+/Collector/
+outlook.ms-acdc.office.com
+geo.webshell.suite.office.com.akadns.net
+svc.ms
+fast-prod-atm-sfnam.trafficmanager.net
+loki.delve.office.com
+lpcres.delve.office.com
+lpcres.delve.office.com.edgekey.net
+substrate.office.com
+autologon.microsoftazuread-sso.com
+shared.wac.trafficmanager.net
+shared.officeapps.live.com
+data.microsoft.com/OneCollector/
+browser.events.data.microsoft.com
+onestore.ms
+/amp_analytics
+metrics
+r1.res.office365.com
+r2.res.office365.com
+r3.res.office365.com
+r4.res.office365.com
+||assets-yammer.com^$3p
+/owa.analytics.
+@@azureedge.net^$3p
+@@.$stylesheet
+@@*player*$script
 
 doubleclick.net
 amazon-adsystem.com
@@ -56,8 +71,6 @@ redditmedia.com/gtm/jail?
 sh.st
 adf.ly
 sh.ly
-t.co
-g.co
 goo.gl
 tiny.cc
 ow.ly
@@ -93,4 +106,3 @@ iplis.ru
 ipgrabber.ru
 ipgraber.ru
 grabify.link
-
