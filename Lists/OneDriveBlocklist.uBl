@@ -15,7 +15,6 @@ ajax.aspnetcdn.com
 aspnetcdn.com
 browser.pipe.aria.microsoft.com
 fs.microsoft.com
-azureedge.net
 microsoftonline-p.com
 /aria-web-telemetry-
 js.live.net
@@ -40,3 +39,4 @@ onestore.ms
 /amp_analytics
 metrics
 @@.$stylesheet
+@@*player*$script
