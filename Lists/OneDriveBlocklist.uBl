@@ -1,5 +1,5 @@
 ! Title: OneDrive Blocklist by L33Tech
-! Updated 5-18-2020 2:34PM EST
+! Updated 5-26-2020 10:59AM EST
 onenote.officeapps.live.com/o/RemoteTelemetry.ashx
 /o/RemoteTelemetry.ashx
 /RemoteTelemetry.ashx
@@ -18,7 +18,6 @@ akamaized.net
 akamaiedge.net
 /footprint/
 /Collector/
-outlook.ms-acdc.office.com
 geo.webshell.suite.office.com.akadns.net
 svc.ms
 fast-prod-atm-sfnam.trafficmanager.net
