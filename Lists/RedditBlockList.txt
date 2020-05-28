@@ -1,4 +1,5 @@
 ! Title: Reddit Blocklist by L33Tech
+! Updated 5-28-2020 11:21AM EST
 
 doubleclick.net
 amazon-adsystem.com
@@ -12,6 +13,7 @@ c.aaxads.com
 /tag
 googletagservices.com
 redditmedia.com/gtm/jail?
+c.amazon-adsystem.com
 
 ! From uBlock Privacy
 ! https://www.reddit.com/r/uBlockOrigin/comments/b9qsix/new_reddit_tracks_a_ton_more_data_someone_said/
