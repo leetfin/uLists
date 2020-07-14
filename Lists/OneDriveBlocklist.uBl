@@ -14,7 +14,7 @@ fs.microsoft.com
 microsoftonline-p.com
 /aria-web-telemetry-
 js.live.net
-akamaized.net
+! akamaized.net
 /footprint/
 /Collector/
 geo.webshell.suite.office.com.akadns.net
