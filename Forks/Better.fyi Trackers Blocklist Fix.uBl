@@ -1,6 +1,8 @@
 [Better.fyi Trackers Blocklist]
+! TESTING VERSION
 ! Title: Better.fyi Trackers Blocklist L33Tech Fork
-! Last Update : 20200509
+! Last Update : 20200629
+! Update details: Upgraded Anti-fingerprinting without messing out website
 ! Source: https://raw.githubusercontent.com/anarki999/Adblock-List-Archive/master/Better.fyiTrackersBlocklist.txt
 
 ! List from https://better.fyi/trackers/
@@ -481,18 +483,30 @@ cocomy.net##.well-sm.well.ad-well
 discoverhongkong.com###rightBannerAdContainer
 !
 ! browserleaks.com
-||*/*rects*$script
-||*/*/rects.js$script
 !||*/*canvas*$script
-||*/*/canvas.js$script
-||*/*fingerprint*$script
-||*/*/fingerprint.js$script
+||*/canvas.js$script,xmlhttprequest
+||*/canvasjs.js$script,xmlhttprequest
+!||*/*fingerprint*$script
+!||*/fingerprint*$script
+!||*/*fingerprint/$script
+||*/fingerprint.js$script,xmlhttprequest
+||*/*fingerprint.js$script,xmlhttprequest
+||*/fingerprint*.js$script,xmlhttprequest
+||*/fingerprint*/*.js$script,xmlhttprequest
+||*/*fingerprint/*.js$script,xmlhttprequest
+||*/*fingerprint*/*.js$script,xmlhttprequest
+||*/fp.js$script,xmlhttprequest
+||*/fp*.js$script,xmlhttprequest
 ||*/*fingerprint*$image,domain=~yimg.com
 ||*/*fingerprint*$xmlhttprequest
-||*/*fingerprint*$inline-script
+!||*/*fingerprint*$inline-script
 !||*/*/*analytics*.js$script
-@@||*/*/jquery.min.js$script
-@@||*/*/jquery.js$script
+@@||*/jquery.min.js$script
+@@||*/jquery.js$script
+! sitexw.fr
+@@||*/*adblock*.js$script
+@@||*/*adblock.js$script
+@@||*/adblock*.js$script
 !
 ! Anti-adblocking / unbreaking (making your adblock & uBlock undectable with AKK list)
 !@@||cdn.digits.com/1/sdk.js$script
@@ -651,24 +665,24 @@ www.teepr.com##.side-big-banner
 ||yimg.com^*_east.swf$domain=yahoo.com$important
 ||yimg.com^*_north.swf$important,domain=yahoo.com
 ||yimg.com^*_west.swf$important,domain=yahoo.com
-@@||ads.yimg.com/a/$important,domain=autos.yahoo.com
-@@||ads.yimg.com/ev/eu/any/vint/videointerstitial*.js$important
-@@||ads.yimg.com/la/adv/y/yahooxtra$important,image,domain=movies.yahoo.com
-@@||ads.yimg.com^*/any/yahoologo$important,image
-@@||ads.yimg.com^*/search/b/syc_logo_2.gif$important
-@@||ads.yimg.com^*videoadmodule*.swf$important
-@@||l.yimg.com/*/adservice/$important
-@@||l.yimg.com/zz/combo?*/advertising.$important,stylesheet
-@@||yimg.com/ks/plugin/adplugin.swf?$important,domain=yahoo.com
-@@||yimg.com/nn/lib/metro/300_250_Human_Touch_mail.jpg$important,domain=yahoo.com
-@@||yimg.com/p/combo?$important,stylesheet,domain=yahoo.com
-@@||yimg.com/rq/darla/*/g-r-min.js$important,domain=yahoo.com
-@@||yimg.com/zz/combo?*&*.js$important
-@@||yimg.com^*&yat/js/ads_$important
-@@||yimg.com^*/adplugin_*.swf$important,object,domain=games.yahoo.com
-@@||yimg.com^*/ads-min.css$important,domain=yahoo.com
-@@||yimg.com^*/java/promotions/js/ad_eo_1.1.js$important
-@@||yimg.com/av/gemini-ui/*/advertiser/$important,domain=gemini.yahoo.com
+@@||ads.yimg.com/a/$domain=autos.yahoo.com
+@@||ads.yimg.com/ev/eu/any/vint/videointerstitial*.js
+@@||ads.yimg.com/la/adv/y/yahooxtra$image,domain=movies.yahoo.com
+@@||ads.yimg.com^*/any/yahoologo$image
+@@||ads.yimg.com^*/search/b/syc_logo_2.gif
+@@||ads.yimg.com^*videoadmodule*.swf
+@@||l.yimg.com/*/adservice/
+@@||l.yimg.com/zz/combo?*/advertising.$stylesheet
+@@||yimg.com/ks/plugin/adplugin.swf?$domain=yahoo.com
+@@||yimg.com/nn/lib/metro/300_250_Human_Touch_mail.jpg$domain=yahoo.com
+@@||yimg.com/p/combo?$stylesheet,domain=yahoo.com
+@@||yimg.com/rq/darla/*/g-r-min.js$domain=yahoo.com
+@@||yimg.com/zz/combo?*&*.js
+@@||yimg.com^*&yat/js/ads_
+@@||yimg.com^*/adplugin_*.swf$object,domain=games.yahoo.com
+@@||yimg.com^*/ads-min.css$domain=yahoo.com
+@@||yimg.com^*/java/promotions/js/ad_eo_1.1.js
+@@||yimg.com/av/gemini-ui/*/advertiser/$domain=gemini.yahoo.com
 ||qos.video.yimg.com^$important
 ||yimg.com/wi/ytc.js$important
 ||yimg.com^*/l?ig=$important,image
@@ -677,14 +691,14 @@ www.teepr.com##.side-big-banner
 ||yimg.com^*/swfproxy-$important,object
 ||yimg.com^*/yabcs.js$important
 ||yimg.com^*/ywa.js$important
-@@||l.yimg.com/g/combo/*/comscore.$important,script
-@@||yimg.com/bm/lib/fi/common/*/yfi_comscore.js$important,domain=finance.yahoo.com
-@@||yimg.com^*/ywa.js$important,domain=nydailynews.com|travelscream.com|yahoo.com
-@@||yimg.com/mi/eu/ywa.js$important,domain=immowelt.de
+@@||l.yimg.com/g/combo/*/comscore.$script
+@@||yimg.com/bm/lib/fi/common/*/yfi_comscore.js$domain=finance.yahoo.com
+@@||yimg.com^*/ywa.js$domain=nydailynews.com|travelscream.com|yahoo.com
+@@||yimg.com/mi/eu/ywa.js$domain=immowelt.de
 ||s.yimg.com/ja/ap/$important,subdocument,domain=hk.news.yahoo.com|hk.yahoo.com|tw.news.yahoo.com|tw.stock.yahoo.com|tw.yahoo.com
-@@||yimg.com/*/*.css$important
-@@||yimg.com/*/css/$important
-@@||ytimg.com^*_banner$important,domain=youtube.com
+@@||yimg.com/*/*.css
+@@||yimg.com/*/css/
+@@||ytimg.com^*_banner$domain=youtube.com
 ||l.yimg.com^*&partner=*&url=$important
 ||yimg.com/gemini/pr/video_$important
 ||yimg.com/gs/apex/mediastore/$important
@@ -725,26 +739,26 @@ www.teepr.com##.side-big-banner
 ||yimg.com^*_east.swf$important,domain=yahoo.com
 ||yimg.com^*_north.swf$important,domain=yahoo.com
 ||yimg.com^*_west.swf$important,domain=yahoo.com
-@@||ads.yimg.com/a/$important,domain=autos.yahoo.com
-@@||ads.yimg.com/ev/eu/any/vint/videointerstitial*.js$important
-@@||ads.yimg.com/la/adv/y/yahooxtra$important,image,domain=movies.yahoo.com
-@@||ads.yimg.com^*/any/yahoologo$important,image
-@@||ads.yimg.com^*/search/b/syc_logo_2.gif$important
-@@||ads.yimg.com^*videoadmodule*.swf$important
-@@||l.yimg.com/*/adservice/$important
-@@||l.yimg.com/zz/combo?*/advertising.$important,stylesheet
-@@||yimg.com/ks/plugin/adplugin.swf?$important,domain=yahoo.com
-@@||yimg.com/nn/lib/metro/300_250_Human_Touch_mail.jpg$important,domain=yahoo.com
-@@||yimg.com/p/combo?$important,stylesheet,domain=yahoo.com
-@@||yimg.com/rq/darla/*/g-r-min.js$important,domain=yahoo.com
-@@||yimg.com/zz/combo?*&*.js$important
-@@||yimg.com^*&yat/js/ads_$important
-@@||yimg.com^*/adplugin_*.swf$important,object,domain=games.yahoo.com
-@@||yimg.com^*/ads-min.css$important,domain=yahoo.com
-@@||yimg.com^*/java/promotions/js/ad_eo_1.1.js$important
-@@||yimg.com/av/gemini-ui/*/advertiser/$important,domain=gemini.yahoo.com
-@@||yimg.com/*/*.css$important
-@@||yimg.com/*/css/$important
+@@||ads.yimg.com/a/$domain=autos.yahoo.com
+@@||ads.yimg.com/ev/eu/any/vint/videointerstitial*.js
+@@||ads.yimg.com/la/adv/y/yahooxtra$image,domain=movies.yahoo.com
+@@||ads.yimg.com^*/any/yahoologo$image
+@@||ads.yimg.com^*/search/b/syc_logo_2.gif
+@@||ads.yimg.com^*videoadmodule*.swf
+@@||l.yimg.com/*/adservice/
+@@||l.yimg.com/zz/combo?*/advertising.$stylesheet
+@@||yimg.com/ks/plugin/adplugin.swf?$domain=yahoo.com
+@@||yimg.com/nn/lib/metro/300_250_Human_Touch_mail.jpg$domain=yahoo.com
+@@||yimg.com/p/combo?$stylesheet,domain=yahoo.com
+@@||yimg.com/rq/darla/*/g-r-min.js$domain=yahoo.com
+@@||yimg.com/zz/combo?*&*.js
+@@||yimg.com^*&yat/js/ads_
+@@||yimg.com^*/adplugin_*.swf$object,domain=games.yahoo.com
+@@||yimg.com^*/ads-min.css$domain=yahoo.com
+@@||yimg.com^*/java/promotions/js/ad_eo_1.1.js
+@@||yimg.com/av/gemini-ui/*/advertiser/$domain=gemini.yahoo.com
+@@||yimg.com/*/*.css
+@@||yimg.com/*/css/
 *##.sys_displayads.dd
 *###yui_3_12_0_4_1498462347313_1533
 *###yui_3_12_0_4_1498456552820_1604
@@ -794,7 +808,7 @@ receivefreesms.net##center:nth-of-type(n)
 ! lihkg.com
 @@||ir0.mobify.com/500/*$image
 ! spiegel.de
-@@||*.adition.com/*$important,domain=www.spiegel.de
+@@||*.adition.com/*$domain=www.spiegel.de
 !
 ! Genral Custom Filters for faster website speed loading
 ||adclixx.net^
@@ -1072,7 +1086,7 @@ receivefreesms.net##center:nth-of-type(n)
 ||vdna-assets.com^$third-party
 ||alephd.com^$third-party
 ||bizographics.com^$third-party
-!||licdn.com^$third-party
+||licdn.com^$third-party
 ||deliverimp.com^$third-party
 ||voicefive.com^$third-party
 ||adsnative.com^$third-party
@@ -1118,7 +1132,7 @@ receivefreesms.net##center:nth-of-type(n)
 ||measure.ly^$third-party
 ||d24ftjcfgttqm3.cloudfront.net^$third-party
 ||connatix.com^$third-party
-||googleusercontent.com^$third-party
+! ||googleusercontent.com^$third-party
 ||adbrn.com^$third-party
 ||tinypass.com^$third-party
 ||brealtime.com^$third-party
@@ -1168,7 +1182,7 @@ receivefreesms.net##center:nth-of-type(n)
 ||igodigital.com^$third-party
 ||afy11.net^$third-party
 ||typography.com^$third-party
-!||edgesuite.net^$third-party
+||edgesuite.net^$third-party
 ||conde.io^$third-party
 ||tacoda.net^$third-party
 ||bidtheatre.com^$third-party
@@ -1503,5 +1517,39 @@ technews.tw###a46524ac
 
 ! https://mail.yahoo.com
 ||s.yimg.com/rx/builds/*$subdocument
-mail.yahoo.com##.e_dRA.r_P.q_Z281SGl.p_R
+mail.yahoo.com##.e_dRA.r_P.q_Z281SGl.p_id^R
 mail.yahoo.com##.Y_eTB.E_A.Q_A.W_3vVYr.C_Z1VRpVF.A_6EqO
+
+! https://www.researchgate.net
+*##.lite-page__above
+
+! https://www.hkbn.net
+*##.animated.float
+
+! https://www.instagram.com
+www.instagram.com##.qD5Mv._4EzTm.eGOV_.IwRSH.Igw0E
+
+! https://briian.com
+briian.com##.entry-content > div:nth-of-type(1)
+briian.com##.post-navigation.navigation
+briian.com##div.post-navigation:nth-of-type(n)
+
+! browserleaks.com
+@@||disqus.com^
+
+! https://www.hk01.com
+www.hk01.com##[src^="https://e.infogram.com/"]
+
+! pixelprivacy.com
+@@||*-google-tag-manager/*$script
+
+! https://webdeasy.de
+*##div.webd-f-container:nth-of-type(n)
+
+! https://timesofindia.indiatimes.com
+timesofindia.indiatimes.com##.ipadmt.paisa1
+
+*##div.\39 f5cbf51aebdcd5dd70684a59b8a7241:nth-of-type(n)
+
+! https://v.youku.com
+v.youku.com##.km5tum3buoaq.diq63ml1ie6b
