@@ -1,7 +1,6 @@
 [Better.fyi Trackers Blocklist]
-! TESTING VERSION
 ! Title: Better.fyi Trackers Blocklist L33Tech Fork
-! Last Update : 20200629
+! Last Update : 20201216
 ! Update details: Upgraded Anti-fingerprinting without messing out website
 ! Source: https://raw.githubusercontent.com/anarki999/Adblock-List-Archive/master/Better.fyiTrackersBlocklist.txt
 
@@ -1039,7 +1038,6 @@ receivefreesms.net##center:nth-of-type(n)
 ||kingfeatures.com^$third-party
 ||360yield.com^$third-party
 !||netdna-cdn.com^$third-party
-||akamai.net^$third-party
 ||syncaccess.net^$third-party
 ||gravatar.com^$third-party
 ||rundsp.com^$third-party
