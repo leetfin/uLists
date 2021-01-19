@@ -1,7 +1,7 @@
 [Better.fyi Trackers Blocklist]
 ! Title: Better.fyi Trackers Blocklist L33Tech Fork
-! Last Update : 20201216
-! Update details: Upgraded Anti-fingerprinting without messing out website
+! Last Update : 20210119
+! Update details: Removed allow connect.facebook.net
 ! Source: https://raw.githubusercontent.com/anarki999/Adblock-List-Archive/master/Better.fyiTrackersBlocklist.txt
 
 ! List from https://better.fyi/trackers/
@@ -399,8 +399,8 @@ i-comic.net##.in.fade.modal-backdrop
 girltalkhk.com##.ad-unit-footer-header
 !
 ! http://hk.apple.nextmedia.com/news/art/20160920/19776210
-*###fb_like
-@@||connect.facebook.net^
+! *###fb_like
+! @@||connect.facebook.net^
 !
 ! http://www.creativebloq.com/3d/30-amazing-examples-webgl-action-6142954
 creativebloq.com##.placeholder
