@@ -1,0 +1,164 @@
+[Adblock Plus 2.0]
+! Title: 0131 Block List
+! Homepage: https://austinhuang.me/0131-block-list
+! Licence: https://creativecommons.org/licenses/by-sa/4.0/
+! Expires: 7 days
+! Version: 20220411
+
+! => https://austinhuang.me/0131-block-list/list.txt
+
+www.textnow.com##.flex-fill.flex-row > .rotation-manager-slot
+www.textnow.com###banner
+www.textnow.com###rectSlotAd
+www.textnow.com##.interstitial-banner
+
+||media1.shmoop.com/images/general/shmooptube_ad_literature.png$image
+
+blog.renren.com##[id^="blogTwoAD"]
+blog.renren.com##.float-left.clearfix.link_name
+
+wikia.com###OriginPlatformAdUnit-3969-overthepage
+
+www.higherlowergame.com###adPopup
+||www.higherlowergame.com/rubicon-banner.html?ad_type=banner$subdocument,domain=www.higherlowergame.com
+||s0.2mdn.net/instream/video/client.js$script,domain=www.higherlowergame.com,important
+||imasdk.googleapis.com/js/core/bridge3.192.0_en.html$subdocument,domain=www.higherlowergame.com,important
+||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=www.higherlowergame.com,important
+
+www.youtube.com###masthead-ad
+
+nytimes.com##[id^="medium-rectangle-ad-"]
+nytimes.com##[id^="story-ad-"]
+
+pandora.tv##.section_adarea
+pandora.tv###pantv_down_div
+pandora.tv##[id^="sAdSmall_"]
+pandora.tv##[id^="sAdBig_"]
+pandora.tv##[id^="left_ad_"]
+pandora.tv###ad_toast_area
+pandora.tv###prism_paing_ad
+pandora.tv##.new_adsambox03
+
+www.pixiv.net##.ad-footer
+www.pixiv.net##.area_new > .area_inside
+
+www.programmableweb.com###apis
+www.programmableweb.com##.bottom-endor-commer-wrapper
+www.programmableweb.com##[id^="block-block-"]
+
+discord.me##.discord-unit
+
+www.nbcnews.com##.ad-break
+
+globalnews.ca##.story-ad
+globalnews.ca##.c-ad
+
+www.urbandictionary.com##.da-panel:nth-of-type(4)
+www.urbandictionary.com###google_ads_iframe_\/1031683\/UD_ROS_728x90_ATF_Flex_0__container__
+www.urbandictionary.com###dark_top
+www.urbandictionary.com##.panel-margin.dfp-panel
+
+www.quora.com##[id$="_wrapper"].content_rectangle
+
+thefeecalculator.com##.ad
+thefeecalculator.com##.adsbygoogle
+
+convertio.co##.content-wrapper > .blur-bg-wrap
+convertio.co##.text-center.adb_wrapper_off
+convertio.co##.content-wrapper > .destination
+
+www.cbc.ca##[id^="bigbox-fixed-"]
+www.cbc.ca##.responsive
+
+shellshock.io###bigAd
+shellshock.io###aipGameContainer
+
+www.mms.com##.opened_overlay.bg
+www.mms.com##.opened_overlay.form.agegate
+
+readthedocs.io##.keep-us-sustainable
+
+web.fc2.com###fc2_ad_box
+web.fc2.com###fc2_bottom_bnr
+
+suumo.jp###bannerContent
+suumo.jp###bannerPanel
+
+loritta.website##.please-disable-modal
+
+www.webmd.com##.-mor
+
+! Spotify (1host overkill)
+@@||guc-dealer.spotify.com^$xmlhttprequest,domain=open.spotify.com
+@@||guc-spclient.spotify.com^$xmlhttprequest,domain=open.spotify.com
+
+minecraft-tracker.com##[id^="adblock"]
+
+www.ciel103.com###publicite-entete
+www.ciel103.com###cboxOverlay
+www.ciel103.com###colorbox
+www.ciel103.com/assets/js/ads.js
+
+www.tumblr.com##div[id^="standalone-ad"]
+www.tumblr.com##.sidebar-ad--sticky.sidebar-ad
+
+blog.fc2.com###fc2_bottom_bnr
+blog.fc2.com###e
+
+xrea.com###vdbanner
+
+prnt.sc##.additional
+
+www.forbes.com##.sticky.top-ad-container
+
+slate.com##.ad
+
+www.theguardian.com##.ad-slot
+
+www.ratemyprofessors.com##.ad
+www.ratemyprofessors.com##.sticky-wrapper
+
+worldofsolitaire.com###rac
+worldofsolitaire.com###rahlc
+
+www.wired.co.uk##[id^="ad_"]
+
+www.symbolab.com##.symp
+
+www.linguee.com##[id^=banner_]
+
+skribbl.io###containerFreespace > .adsbygoogle
+
+@@||media*.ledevoir.com$image
+
+en.wikipedia.org##.cbnnr-main
+en.wikipedia.org##.cn-fundraising
+en.wikipedia.org###frb-inline
+en.wikipedia.org##.ext-quick-survey-panel
+
+www.thestar.com##.c-related-articles
+
+www.roblox.com##.sponsored-game
+
+www.reddit.com###overlay-comment-atf
+
+www.mathway.com##.ch-bubble:has(> .ch-ad-icon)
+
+online.fliphtml5.com##.fh5---banner---container
+
+! This filter disables login button + popup from Zhihu question pages (Since it constantly pops up if you're not logged in)
+! You should still be able to login from https://zhihu.com/signin (or by clicking Zhihu logo from question pages)
+||static.zhihu.com/heifetz/main.signflow.*$script
+
+! Blocks some Discord tracking, see https://luna.gitlab.io/discord-unofficial-docs/science.html
+||*.discord.com/api/v*/science
+
+! GitAds
+##[href^="https://tracking.gitads.io/"]
+
+! Zonerama
+www.zonerama.com##.list-alb:not([data-size="1"]):not([data-album-id])
+www.zonerama.com##.gallery-inner:not([data-image-pattern])
+
+! Flickr
+www.flickr.com##.photo-page-leader-moola-view
