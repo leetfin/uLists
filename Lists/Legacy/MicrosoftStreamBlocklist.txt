@@ -1,3 +1,4 @@
+[AdBlock Plus 2.0; uBlock Origin]
 ! Title: Microsoft Stream Blocklist by L33Tech
 ! Might need Decentraleyes to work
 
