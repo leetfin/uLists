@@ -1,6 +1,6 @@
-! Title: OneDrive Blocklist by L33Tech
-! Updated 5-28-2020 10:52AM EST
-onenote.officeapps.live.com/o/RemoteTelemetry.ashx
+! Title: OneDrive Blocklist by leetfin
+! Updated 2023-11-14 1:36PM EST
+onenote.officeapps.live.com/o/RmoteTelemetry.ashx
 /o/RemoteTelemetry.ashx
 /RemoteTelemetry.ashx
 swx.cdn.skype.com
@@ -14,8 +14,7 @@ fs.microsoft.com
 microsoftonline-p.com
 /aria-web-telemetry-
 js.live.net
-! akamaized.net
-/footprint/
+||/footprint/
 /Collector/
 geo.webshell.suite.office.com.akadns.net
 svc.ms
@@ -38,6 +37,15 @@ r3.res.office365.com
 r4.res.office365.com
 ||assets-yammer.com^$3p
 /owa.analytics.
-@@azureedge.net^$3p
-@@.$stylesheet
-@@*player*$script
+www.tm.a.prd.aadg.akadns.net
+prod.augmentation.osi.office.net.akadns.net
+augloop.office.com
+||/mrodevicemgrsvc/
+word-edit.officeapps.live.com/we/reportcsp.ashx
+augmentation.osi.office.net
+eur.webshell.suite.office.com.akadns.net
+||/telemetry/
+mrodevicemgr.officeapps.live.com
+||prod.mrodevicemgr.live.com.akadns.net
+||events.data.microsoft.com^
+||pipe.aria.microsoft.com^
