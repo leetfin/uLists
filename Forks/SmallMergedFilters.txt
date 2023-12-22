@@ -2,7 +2,36 @@
 ! Includes 0131 Block List, Adblock the NSA, ayacat's power list (I think) and more small lists.
 ! Includes: Anti APKMirror Ads and Countdown
 ! Includes: BARB/BAR 2 lists
-! Includes basic tracking Disconnect.me
+! Includes basic tracking by Disconnect.me
+
+! Clickbait Blocklist
+! https://github.com/cpeterso/clickbait-blocklist/
+! http://creativecommons.org/publicdomain/zero/1.0/
+
+2leep.com
+adblade.com
+adsnative.com
+cdn.nmcdn.us
+content.ad
+content-ad.net
+mgid.com
+newsmaxfeednetwork.com
+outbrain.com
+revcontent.com
+taboola.com
+zemanta
+zergnet.com
+###ld-326-6498
+###ld_cli-0
+##div[data-outbrain-url]
+##.ezAdsense
+##.outbrain_widget_0
+##.trc_elastic
+##.trc_rbox_container
+##.trc_related_container
+##.trc_spotlight_widget
+##.vendor-outbrain
+##.yap-loaded
 
 # Basic tracking list by Disconnect
 # License: GPLv3
