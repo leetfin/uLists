@@ -1,5 +1,5 @@
-! Title: Reddit Blocklist by L33Tech
-! Updated 5-28-2020 11:21AM EST
+! Title: leetfin's Reddit Blocklist
+! Updated 10-05-2024 11:50PM EST
 
 doubleclick.net
 amazon-adsystem.com
@@ -14,6 +14,8 @@ c.aaxads.com
 googletagservices.com
 redditmedia.com/gtm/jail?
 c.amazon-adsystem.com
+||alb.reddit.com
+old.reddit.com###redesign-beta-optin-btn
 
 ! From uBlock Privacy
 ! https://www.reddit.com/r/uBlockOrigin/comments/b9qsix/new_reddit_tracks_a_ton_more_data_someone_said/
