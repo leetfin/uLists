@@ -1,5 +1,5 @@
-! Title: OneDrive Blocklist by leetfin
-! Updated 2023-11-14 1:36PM EST
+! Title: leetfin's OneDrive Blocklist
+! Updated 2024-10-05 11:55PM EST
 onenote.officeapps.live.com/o/RmoteTelemetry.ashx
 /o/RemoteTelemetry.ashx
 /RemoteTelemetry.ashx
@@ -49,3 +49,16 @@ mrodevicemgr.officeapps.live.com
 ||prod.mrodevicemgr.live.com.akadns.net
 ||events.data.microsoft.com^
 ||pipe.aria.microsoft.com^
+
+! Word autocorrect?
+prod-eu.naturallanguageeditorservice.osi.office.net.akadns.net
+nleditor.osi.office.net
+amcdn.msftauth.net
+prod.mrodevicemgr.live.com.akadns.net
+cdn.uci.officeapps.live.com
+
+spoprod-a.akamaihd.net
+europe.configsvc1.live.com.akadns.net
+officeclient.microsoft.com
+webshell.suite.office.com
+oauth.online.office.com
