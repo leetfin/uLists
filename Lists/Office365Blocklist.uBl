@@ -1,5 +1,10 @@
-! Title: leetfin's OneDrive Blocklist
-! Updated 2024-10-05 11:55PM EST
+! Title: leetfin's Office 365 Blocklist
+! Updated 2025-03-24 11:55PM EST
+
+||events.data.microsoft.com^
+||pipe.aria.microsoft.com^
+||word-telemetry.officeapps.live.com^
+
 onenote.officeapps.live.com/o/RmoteTelemetry.ashx
 /o/RemoteTelemetry.ashx
 /RemoteTelemetry.ashx
@@ -9,7 +14,6 @@ b-ring.msedge.net
 atm-fp-direct.office.com
 ajax.aspnetcdn.com
 aspnetcdn.com
-browser.pipe.aria.microsoft.com
 fs.microsoft.com
 microsoftonline-p.com
 /aria-web-telemetry-
@@ -27,7 +31,6 @@ autologon.microsoftazuread-sso.com
 shared.wac.trafficmanager.net
 shared.officeapps.live.com
 data.microsoft.com/OneCollector/
-browser.events.data.microsoft.com
 onestore.ms
 /amp_analytics
 metrics
@@ -47,8 +50,6 @@ eur.webshell.suite.office.com.akadns.net
 ||/telemetry/
 mrodevicemgr.officeapps.live.com
 ||prod.mrodevicemgr.live.com.akadns.net
-||events.data.microsoft.com^
-||pipe.aria.microsoft.com^
 
 ! Word autocorrect?
 prod-eu.naturallanguageeditorservice.osi.office.net.akadns.net
@@ -62,3 +63,13 @@ europe.configsvc1.live.com.akadns.net
 officeclient.microsoft.com
 webshell.suite.office.com
 oauth.online.office.com
+
+||msn.com^$3p
+/api/v1/endpointtracker
+csp.microsoft.com/report
+||shellux/suiteux.shell.otellogging
+ecs.office.com/config/v1/LokiService/
+office365.com/footprint/
+!||trafficmanager.net^
+substrate.office.com
+||admin.microsoft.com/api/instrument/logclient
