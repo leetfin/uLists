@@ -1,5 +1,5 @@
 ! Title: leetfin's Office 365 Blocklist
-! Updated 2025-03-24 11:55PM EST
+! Updated 2025-05-28 04:07 PM EST
 
 ||events.data.microsoft.com^
 ||pipe.aria.microsoft.com^
@@ -40,7 +40,7 @@ r3.res.office365.com
 r4.res.office365.com
 ||assets-yammer.com^$3p
 /owa.analytics.
-www.tm.a.prd.aadg.akadns.net
+! www.tm.a.prd.aadg.akadns.net
 prod.augmentation.osi.office.net.akadns.net
 augloop.office.com
 ||/mrodevicemgrsvc/
