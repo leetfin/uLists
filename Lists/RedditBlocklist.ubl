@@ -1,5 +1,5 @@
 ! Title: leetfin's Reddit Blocklist
-! Updated 10-05-2024 11:50PM EST
+! Updated 11-10-2025 1:20PM EST
 
 doubleclick.net
 amazon-adsystem.com
@@ -10,12 +10,14 @@ reddit.com/api/jail/
 /renderTimingPixel.
 c.aaxads.com
 /ads.js
-/tag
 googletagservices.com
 redditmedia.com/gtm/jail?
 c.amazon-adsystem.com
 ||alb.reddit.com
 old.reddit.com###redesign-beta-optin-btn
+||redditstatic.com/shreddit/sentry-
+||w3-reporting.reddit.com^
+||rlcdn.com^
 
 ! From uBlock Privacy
 ! https://www.reddit.com/r/uBlockOrigin/comments/b9qsix/new_reddit_tracks_a_ton_more_data_someone_said/
